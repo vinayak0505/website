@@ -436,7 +436,8 @@ h6{
 @media screen and (max-width:768px) {
     .timeline-box{
         align-items: end !important;
-        left: 30% !important;
+        left: 25% !important;
+        width: 60%;
     }
     
     .timeline-box div{
