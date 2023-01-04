@@ -347,8 +347,8 @@ h6{
 
 /* --------------Work Experience----------- */
 
-#experience{
-    padding: 10px 100px 20px 100px;
+#experience, #education{
+    padding: 2% 8% 8% 8%;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
@@ -432,10 +432,36 @@ h6{
     top: 25%; 
     z-index: 3;
 }
-/* ------------Education-------------- */
-#education{
-    padding: 10px 100px 20px 100px;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
+
+@media screen and (max-width:768px) {
+    .timeline-box{
+        align-items: end !important;
+        left: 30% !important;
+    }
+    
+    .timeline-box div{
+        align-items: end !important;
+        text-align: end !important;
+    }
+    .divider{
+        left: 10% !important;
+    }
+    #experience, #education{
+        padding: 0;
+    }
+
+    .timeline-box::after{
+        left: -50.8% !important;
+    }
+    .responsive-wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    #your-info-form {
+        width: 100%;
+    }
+    #get-in-touch{
+        width: 100%;
+    }
 }
+
