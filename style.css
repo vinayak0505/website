@@ -358,7 +358,7 @@ h6 {
 
 .timeline-box {
     width: 40%;
-    border: 2px solid transparent;
+    padding: 20px 2px;
     position: relative;
     /* height: 100px; */
     left: 5%;
@@ -392,14 +392,14 @@ h6 {
 }
 
 .timeline-box::after {
-    width: 0.5rem;
-    height: 0.5rem;
+    width: 0.7rem;
+    height: 0.7rem;
     border-radius: 50%;
     content: '';
-    background-color: #0096fa6b;
+    background-color: #0096fa;
     top: 25%;
     position: absolute;
-    left: 111.8%;
+    left: 110.5%;
     z-index: 2;
 }
 
@@ -451,13 +451,12 @@ h6 {
         left: 10% !important;
     }
 
-    #experience,
-    #education {
+    #experience, #education {
         padding: 0;
     }
 
     .timeline-box::after {
-        left: -50.8% !important;
+        left: -25% !important;
     }
 
     .responsive-wrap {
@@ -486,8 +485,9 @@ h6 {
         box-shadow: 2px 2px 10px black;
         background-color: #9A9D8C;
         transition: height 1s;
-        opacity:0;
+        opacity: 0;
     }
+
     #navigation-icon {
         text-align: right;
         position: fixed;
@@ -495,7 +495,7 @@ h6 {
         color: white;
     }
 
-    .nav-menu:hover{
+    .nav-menu:hover {
         height: 170px;
         opacity: 1;
         width: auto;
