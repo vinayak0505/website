@@ -476,7 +476,7 @@ h6 {
 @media screen and (max-width:572px) {
     .nav-menu {
         text-align: right;
-        position: fixed;
+        position: absolute;
         right: 10px;
         overflow: hidden;
         height: 30px;
@@ -490,7 +490,7 @@ h6 {
 
     #navigation-icon {
         text-align: right;
-        position: fixed;
+        position: absolute;
         right: 10px;
         color: white;
     }
