@@ -5,6 +5,9 @@ body {
 }
 
 /* Body Header */
+#navigation-icon{
+    visibility: hidden;
+}
 
 #body-header {
     height: 65vh;
@@ -57,7 +60,7 @@ section:nth-child(even) {
 /* Name and Social Icons*/
 
 #name-social-container {
-    margin-top: 20vh;
+    margin-top: 15vh;
 }
 
 #my-name {
@@ -71,6 +74,7 @@ section:nth-child(even) {
 
 .social-icons li a i {
     /*color: red;*/
+    border: 1px solid grey;
     padding: 10px;
     font-size: 1rem;
     border-radius: 50%;
@@ -183,6 +187,13 @@ section:nth-child(even) {
 }
 
 /* Skills value */
+#react {width: 80%;}
+#mongodb {width: 80%;}
+#nodejs {width: 80%;}
+#express {width: 80%;}
+#git {width: 80%;}
+#postman {width: 80%;}
+#nextjs {width: 80%;}
 #c_plus_plus {
     width: 80%;
 }
@@ -200,11 +211,11 @@ section:nth-child(even) {
 }
 
 #javascript {
-    width: 50%;
+    width: 70%;
 }
 
 #typescript {
-    width: 50%;
+    width: 70%;
 }
 
 #python {
@@ -224,13 +235,14 @@ section:nth-child(even) {
     margin: 0 50px;
     position: relative;
     height: 250px;
-    width: 300px;
+    width: 450px;
 }
 
 #portfolio img {
     position: absolute;
     height: 100%;
     width: 100%;
+    object-fit: fill;
 }
 
 #portfolio a {
@@ -399,12 +411,12 @@ h6 {
     background-color: #0096fa;
     top: 25%;
     position: absolute;
-    left: 110.5%;
+    left: 111.2%;
     z-index: 2;
 }
 
 .timeline-box:nth-child(even)::after {
-    left: -13.2%;
+    left: -13%;
 }
 
 .timeline {
@@ -420,7 +432,7 @@ h6 {
 
 .divider {
     position: absolute;
-    height: 75%;
+    height: 80%;
     left: 50%;
     width: 0;
     top: 7%;
@@ -489,6 +501,7 @@ h6 {
     }
 
     #navigation-icon {
+        visibility: visible;
         text-align: right;
         position: absolute;
         right: 10px;
