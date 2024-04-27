@@ -1,8 +1,11 @@
+
 body {
     width: 100vw;
     margin: 0px;
     font-family: sans-serif;
     font-size: 30px;
+    background-color: #1F232E;
+    color: #07C8D8;
 }
 body::-webkit-scrollbar {
     display: none; /* Hide scrollbar */
@@ -131,8 +134,8 @@ section:nth-child(even) {
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    border: 3px solid white;
-    box-shadow: 1px 1px 10px 2px lightgrey;
+    border: 3px solid #07C8D8;
+    box-shadow: 1px 1px 10px 2px #07C8D8;
 }
 
 #about-para {
@@ -314,6 +317,7 @@ section:nth-child(even) {
 #projects img {
     position: absolute;
     height: 100%;
+    border-radius: 20px;
     width: 100%;
     object-fit: fill;
 }
@@ -323,6 +327,7 @@ section:nth-child(even) {
     position: absolute;
     text-align: center;
     color: transparent;
+    border-radius: 20px;
     height: 100%;
     width: 100%;
 }
