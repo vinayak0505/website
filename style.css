@@ -1,11 +1,15 @@
 body {
+    width: 100vw;
     margin: 0px;
     font-family: sans-serif;
     font-size: 30px;
 }
+body::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
 
 /* Body Header */
-#navigation-icon{
+#navigation-icon {
     visibility: hidden;
 }
 
@@ -17,6 +21,17 @@ body {
     background-position: center;
     background-attachment: fixed;
     padding-top: 1.2rem;
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit;
+}
+
+@keyframes fade-out {
+    85%,
+    100% {
+        opacity: 0;
+        scale: 2;
+    }
 }
 
 section:nth-child(even) {
@@ -74,7 +89,8 @@ section:nth-child(even) {
 }
 
 
-.social-icons li a i,.social-icons li a img {
+.social-icons li a i,
+.social-icons li a img {
     /*color: red;*/
     border: 1px solid grey;
     padding: 10px;
@@ -91,7 +107,8 @@ section:nth-child(even) {
 }
 
 
-.social-icons li a i:hover,.social-icons li a img:hover {
+.social-icons li a i:hover,
+.social-icons li a img:hover {
     box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
 }
 
@@ -140,9 +157,19 @@ section:nth-child(even) {
     animation: fade-in linear;
     animation-timeline: view(100% 0px)
 }
+
 @keyframes fade-in {
-    from {scale: 0.8; opacity: 0; border-radius: 20px;}
-    to {scale: 1; opacity: 1; border-radius: 0px;}
+    from {
+        scale: 0.8;
+        opacity: 0;
+        border-radius: 20px;
+    }
+
+    to {
+        scale: 1;
+        opacity: 1;
+        border-radius: 0px;
+    }
 }
 
 #skills>div {
@@ -199,13 +226,34 @@ section:nth-child(even) {
 }
 
 /* Skills value */
-#react {width: 80%;}
-#mongodb {width: 80%;}
-#nodejs {width: 80%;}
-#express {width: 80%;}
-#git {width: 80%;}
-#postman {width: 80%;}
-#nextjs {width: 80%;}
+#react {
+    width: 80%;
+}
+
+#mongodb {
+    width: 80%;
+}
+
+#nodejs {
+    width: 80%;
+}
+
+#express {
+    width: 80%;
+}
+
+#git {
+    width: 80%;
+}
+
+#postman {
+    width: 80%;
+}
+
+#nextjs {
+    width: 80%;
+}
+
 #c_plus_plus {
     width: 80%;
 }
@@ -244,8 +292,14 @@ section:nth-child(even) {
 }
 
 @keyframes slide-in {
-    from {left: 100px; opacity: 0.5;}
-    to {left: 0; opacity: 1;}
+    from {
+        transform: translateX(100px);
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 #projects>div>div {
@@ -254,7 +308,7 @@ section:nth-child(even) {
     height: 250px;
     width: 450px;
     animation: slide-in linear;
-    animation-timeline: view(100% 0px)
+    animation-timeline: view(80% 0px)
 }
 
 #projects img {
@@ -482,7 +536,8 @@ h6 {
         left: 10% !important;
     }
 
-    #experience, #education {
+    #experience,
+    #education {
         padding: 0;
     }
 
