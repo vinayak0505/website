@@ -226,28 +226,28 @@ section:nth-child(even) {
 
 /* Portfolio */
 
-#portfolio>div {
+#projects>div {
     padding: 40px 0;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
 }
 
-#portfolio>div>div {
+#projects>div>div {
     margin: 0px 50px 50px 50px;
     position: relative;
     height: 250px;
     width: 450px;
 }
 
-#portfolio img {
+#projects img {
     position: absolute;
     height: 100%;
     width: 100%;
     object-fit: fill;
 }
 
-#portfolio a {
+#projects a {
     text-decoration: none;
     position: absolute;
     text-align: center;
@@ -256,7 +256,7 @@ section:nth-child(even) {
     width: 100%;
 }
 
-#portfolio a:hover {
+#projects a:hover {
     display: block;
     background-color: rgba(0, 0, 0, 0.2);
     color: white;
@@ -264,7 +264,7 @@ section:nth-child(even) {
 }
 
 
-#portfolio p {
+#projects p {
     padding: 20px;
 }
 
