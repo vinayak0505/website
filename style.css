@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
 }
 
 #body-header {
-    height: 65vh;
+    height: 70vh;
     padding-top: 1.2rem;
     animation: fade-out linear;
     animation-timeline: view();
@@ -60,13 +60,14 @@ section:nth-child(even) {
     list-style: none;
     padding-left: 0px;
     margin: 0px;
+    gap: 20px;
     display: flex;
     justify-content: center;
 }
 
 .horizontal-list li {
     display: inline-block;
-    margin: 0px 8px 8px 0px;
+    margin-bottom: 8px;
     font-weight: 100px;
     font-size: 0.9rem;
 }
