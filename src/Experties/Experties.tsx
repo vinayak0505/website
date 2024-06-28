@@ -36,6 +36,7 @@ const Experties = () => {
                 <div className={Styles.title}>Things that i do</div>
                 <div className={Styles.about}>{about}</div>
                 <div className={Styles.about}>{about2}</div>
+                <div className={Styles.gap}/>
                 <div className={Styles.items}>
                     <a href='https://codechef.com/users/vinayakagg05' target='_blank' rel='noreferrer'>
                         <div className={Styles.title}>4Star</div>

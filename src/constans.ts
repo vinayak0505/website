@@ -25,3 +25,42 @@ export const experience = [
         about: about
     },
 ]
+
+export interface Project {
+    title: string
+    image: string
+    link: string
+}
+
+export const projects:Project[] = [
+    {
+        title: "The Map Maker",
+        image: "./images/1.png",
+        link: "testing"
+    },
+    {
+        title: "First",
+        image: "./images/1.png",
+        link: "testing"
+    },
+    {
+        title: "First",
+        image: "./images/1.png",
+        link: "testing"
+    },
+    {
+        title: "First",
+        image: "./images/1.png",
+        link: "testing"
+    },
+    {
+        title: "First",
+        image: "./images/1.png",
+        link: "testing"
+    },
+    {
+        title: "First",
+        image: "./images/1.png",
+        link: "testing"
+    }
+]
