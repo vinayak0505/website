@@ -15,8 +15,9 @@ a:active {
 :root {
     --background-color: #f8f7f1;
     --primary-color: #0d2f3f;
-    --secondary-color: rgb(242, 112, 78);
-    --tertiary-color: rgb(238, 192, 72);
+    --secondary-color-1: rgb(40, 111, 108);
+    --secondary-color-2: rgb(242, 112, 78);
+    --secondary-color-3: rgb(238, 192, 72);
     font-family: Eudoxus Sans, sans-serif;
 }
 
@@ -31,7 +32,7 @@ a:active {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: color-mix(in lab,var(--primary-color), rgb(96, 96, 96));
+    background: color-mix(in lab, var(--primary-color), rgb(96, 96, 96));
 }
 
 /* Handle on hover */
