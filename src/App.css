@@ -12,13 +12,18 @@ a:active {
     color: inherit;
 }
 
+@font-face {
+    font-family: EudoxusSansGX;
+    src: url("./Eudoxus-Sans-font/EudoxusSansGX.ttf");
+}
+
 :root {
     --background-color: #f8f7f1;
     --primary-color: #0d2f3f;
     --secondary-color-1: rgb(40, 111, 108);
     --secondary-color-2: rgb(242, 112, 78);
     --secondary-color-3: rgb(238, 192, 72);
-    font-family: Eudoxus Sans, sans-serif;
+    font-family: EudoxusSansGX;
 }
 
 ::-webkit-scrollbar {

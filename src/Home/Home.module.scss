@@ -1,5 +1,4 @@
 .home {
-    // background-color: var(--background-color);
     color: var(--primary-color);
     padding: 64px 64px 32px;
 
@@ -35,7 +34,9 @@
             box-sizing: border-box;
             width: 40px;
             height: 40px;
-            padding-top: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border-radius: 50px;
             background-color: var(--primary-color);
             content: url('../assets/download_icon.svg');
