@@ -1,0 +1,74 @@
+.home {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    padding: 64px 64px 32px;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+
+        .title {
+            font-weight: bold;
+            white-space: pre-line;
+            font-size: 6rem;
+        }
+
+        .subtitle {
+            line-height: 40px;
+            font-size: 1rem;
+        }
+    }
+
+    .resume {
+        width: fit-content;
+        border: 1px solid var(--primary-color);
+        padding-right: 16px;
+        border-radius: 50px;
+        font-size: 1rem;
+        gap: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+
+        &::before {
+            border: 1px solid var(--background-color);
+            box-sizing: border-box;
+            width: 40px;
+            height: 40px;
+            padding-top: 8px;
+            border-radius: 50px;
+            background-color: var(--primary-color);
+            content: url('../assets/download_icon.svg');
+        }
+
+        &:hover {
+            background-color: var(--background-color);
+            color: var(--primary-color);
+        }
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        .collage {
+            font-size: 1rem;
+
+            &::before {
+                content: "9";
+                font-size: 3rem;
+            }
+        }
+
+        .experience {
+            font-size: 1rem;
+            text-align: right;
+
+            &::before {
+                content: "2+";
+                font-size: 3rem;
+            }
+        }
+    }
+}

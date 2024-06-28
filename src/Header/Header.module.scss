@@ -1,0 +1,35 @@
+.header {
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    padding: 16px 32px;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+
+    .name {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .nav {
+        display: flex;
+        gap: 1.5rem;
+
+        .item {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: inherit;
+            font-size: 1rem;
+            cursor: pointer;
+
+            &:hover,
+            &:focus,
+            &:active {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+}
