@@ -1,0 +1,48 @@
+.about {
+    display: flex;
+    padding: 64px;
+    justify-content: space-between;
+
+    .align {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .gap {
+            min-height: 40px;
+            flex: 1;
+        }
+    }
+
+    .title {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .link {
+        font-size: 3rem;
+        font-weight: 700;
+        text-decoration: underline;
+        cursor: pointer;
+        color: var(--secondary-color-2);
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        .icon {
+            cursor: pointer;
+            width: 12px;
+            height: 12px;
+            padding: 8px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+        }
+    }
+}
