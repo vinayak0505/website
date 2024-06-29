@@ -3,7 +3,7 @@ import Styles from './About.module.scss';
 
 const About = () => {
     return (
-        <div id='contant' className={Styles.about}>
+        <div id='contact' className={Styles.about}>
             <div className={Styles.align}>
                 <div className={Styles.title}>Let's make something<br />amazing together.</div>
                 <div className={Styles.gap}></div>
