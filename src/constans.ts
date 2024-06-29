@@ -48,6 +48,7 @@ const proabout2 = `LazyEngineer, my personal project, boasts a powerful backend 
 const proabout3 = `In a company project, I built a learning & support platform using a powerful backend (Node.js, JavaScript, TypeScript, Express.js, MongoDB) with a RESTful API for seamless data flow. Secure logins, efficient file handling, and features like chat and meetings run smoothly on this foundation. The user-facing side, built with React.js, Redux, Tailwind, and Redux Toolkit, offers an intuitive interface for browsing, building resumes, and tracking progress. Engaging quizzes and a clean design round out the platform. This project showcases my ability to bridge frontend and backend for user-centric development.`;
 const proabout4 = `This React application showcases my ability to build user-friendly e-commerce experiences. Using React.js, I crafted an intuitive interface for browsing products, searching by name, and filtering by type. Firebase serves as the secure backend, storing product data and facilitating user accounts. With a user-friendly shopping cart and checkout process, users can seamlessly add items and proceed to purchase. While the application doesn't track actual warehouse inventory (allowing unlimited purchases for demonstration purposes), it offers a persistent user experience. Login functionality allows users to access their carts and previous bills from any computer, fostering repeat purchases and building customer loyalty. This project highlights my ability to bridge frontend development with Firebase integration, resulting in a functional and user-centric e-commerce platform.`;
 const proabout5 = `In a personal project, I built a user-friendly image gallery web application. This platform empowers anyone to share their photos and organize them into folders, all without requiring login credentials. This open approach fosters a collaborative and easily accessible space for sharing visual content. Users can upload images, browse existing ones, and explore various folders to discover diverse collections. This project demonstrates my understanding of user experience and my ability to leverage web technologies to create a platform that encourages open sharing and fosters a vibrant online community.`;
+const proabout6 = `Take a fantastical leap into "Knight-In-Floating-Forest," a 2D platformer game I built using Godot and GDScript. Explore whimsical landscapes, collecting coins and mastering challenging levels.  This web-playable adventure unlocks new levels as you progress, keeping you engaged and eager to conquer the next floating realm.  Whether you prefer the precision of keyboard controls or the ease of on-screen touch buttons, "Knight-In-Floating-Forest" offers a captivating and accessible experience.  Local storage ensures your progress is saved, so you can continue your journey as the valiant knight, conquering each level and uncovering the secrets of the floating forest.`;
 
 export const projects: Project[] = [
     {
@@ -79,6 +80,12 @@ export const projects: Project[] = [
         image: "./images/gallery.png",
         link: "https://vinayak0505.github.io/Gallery-Template/",
         about: proabout5
+    },
+    {
+        title: "Knigh In Floating Forest",
+        image: "./images/knigh_in_floting_forest.png",
+        link: "https://vinayak0505.github.io/Gallery-Template/",
+        about: proabout6
     },
 ]
 
