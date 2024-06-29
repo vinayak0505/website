@@ -97,34 +97,29 @@ export interface Certificate {
 
 export const certificates: Certificate[] = [
     {
-        title: "Mongo Db Certified Associate Developer",
-        image: "./images/1.png",
-        link: "testing"
+        title: "MongoDb Certified Associate Developer",
+        image: "./images/mongo.jpg",
+        link: "https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/5392bda6-ad8e-4c52-871a-71dc83ba3d04-vinayak-agarwal-c3fa3317-086e-45bb-b14a-1d50630c2ce2-certificate.pdf"
     },
     {
-        title: "First",
-        image: "./images/1.png",
-        link: "testing"
+        title: "Back End | Full Stack Web Development in Node.js",
+        image: "./images/node.jpg",
+        link: "http://certificate.codingninjas.com/verify/b946d63ff75aa1b8"
     },
     {
-        title: "First",
-        image: "./images/1.png",
-        link: "testing"
+        title: "Redis | RU101 Certificate | Redis University",
+        image: "./images/redis.jpg",
+        link: "https://university.redis.com/certificates/5436c2cc10794d638d619de5de4c57df"
     },
     {
-        title: "First",
-        image: "./images/1.png",
-        link: "testing"
+        title: "Advance Front-End Web Development with React - Full Stack",
+        image: "./images/react.jpg",
+        link: "http://certificate.codingninjas.com/verify/ad2698902163bc51"
     },
     {
-        title: "First",
-        image: "./images/1.png",
-        link: "testing"
-    },
-    {
-        title: "First",
-        image: "./images/1.png",
-        link: "testing"
+        title: "Advance Graph Theory",
+        image: "./images/graph.jpeg",
+        link: "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL23CS26S4463027803132777"
     }
 ]
 
