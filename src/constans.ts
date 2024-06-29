@@ -30,9 +30,49 @@ export interface Project {
     title: string
     image: string
     link: string
+    about: string
 }
 
-export const projects:Project[] = [
+export const projects: Project[] = [
+    {
+        title: "The Map Maker",
+        image: "./images/1.png",
+        link: "testing",
+        about: about2
+    },
+    {
+        title: "First",
+        image: "./images/1.png",
+        link: "testing",
+        about: about2 + about2
+    },
+    {
+        title: "First",
+        image: "./images/1.png",
+        link: "testing",
+        about: about2
+    },
+    {
+        title: "First",
+        image: "./images/1.png",
+        link: "testing",
+        about: about2
+    },
+    {
+        title: "First",
+        image: "./images/1.png",
+        link: "testing",
+        about: about2
+    },
+]
+
+export interface Certificate {
+    title: string
+    image: string
+    link: string
+}
+
+export const certificates: Certificate[] = [
     {
         title: "The Map Maker",
         image: "./images/1.png",

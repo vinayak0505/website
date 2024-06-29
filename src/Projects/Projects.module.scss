@@ -20,51 +20,55 @@
             font-weight: 500;
         }
     }
+}
 
-    .items {
-        margin-top: 40px;
-        display: flex;
-        gap: 40px;
-        overflow-x: auto;
-        overflow-y: visible;
-        padding: 20px 20px 40px;
-        scrollbar-width: none;
+.items {
+    display: grid;
+    gap: 50px;
+    margin-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
-        .item {
-            --shadow-color: rgba(0, 0, 0, 0.7);
-            --radius: 20px;
-            height: 200px;
-            position: relative;
-            border: 1px solid white;
-            -webkit-box-shadow: 10px 10px 26px -6px var(--shadow-color);
-            -moz-box-shadow: 10px 10px 26px -6px var(--shadow-color);
-            box-shadow: 10px 10px 26px -6px var(--shadow-color);
-            border-radius: var(--radius);
-            overflow: clip;
+    .item {
+        display: grid;
+        grid-template-rows: subgrid;
+        grid-row: span 4;
+        row-gap: 10px;
 
-            .image {
-                background-color: var(--secondary-color-3);
-                height: 200px;
-                min-width: 200px;
-                border-radius: var(--radius);
-            }
+        .image {
+            width: 100%;
+            overflow: hidden;
+            height: auto;
+        }
 
-            .title {
-                padding: 4px 8px;
-                font-size: 2rem;
-                border-radius: 0px var(--radius) 0px var(--radius);
-                position: absolute;
-                bottom: 0;
-                background-color: rgba(240, 248, 255, 0.8);
-                translate: -100%;
-                transition: translate 0.2s;
-            }
+        .heading {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
 
-            &:hover {
-                .title {
-                    translate: 0px;
-                }
+        .button {
+            width: fit-content;
+            border: 1px solid var(--primary-color);
+            padding-left: 16px;
+            border-radius: 50px;
+            font-size: 1rem;
+            gap: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+
+            &::after {
+                border: 1px solid var(--background-color);
+                padding: 12px;
+                width: 14px;
+                height: 14px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+                background-color: var(--primary-color);
+                content: url('../assets/explore.svg');
             }
         }
     }
+
 }
