@@ -43,36 +43,42 @@ export interface Project {
     about: string
 }
 
+const proabout1 = `This ambitious personal project showcases my full-stack development capabilities. Built with React, Redux, and TypeScript, it presents a dynamic grid-based user interface where exploration takes center stage. Users can navigate freely in any direction, encountering various elements like cyclocinemas, interludes, and epilogues. The interactive map with clickable points reveals captivating content like images, videos, and galleries. Login functionality allows users to curate playlists and share specific pages.  This project further integrates "Textgraphy" – a user-generated content feature displaying user-written text on a shared page.  "The Map Maker From Baghdad" demonstrates my passion for crafting immersive user experiences and leveraging technology for creative storytelling.`;
+const proabout2 = `LazyEngineer, my personal project, boasts a powerful backend built with Node.js, JavaScript, TypeScript, Express.js, and MongoDB. This tech stack ensures a seamless experience. A well-designed RESTful API facilitates communication, allowing students to browse, download, and upload a variety of learning materials – notes, practice files, past papers, and even textbooks. Secure login and profile creation personalize the experience and track content ownership. Efficient file management ensures secure storage and quick retrieval. LazyEngineer goes beyond content. A notification system keeps students informed, while user profiles allow them to showcase skills and online profiles (LeetCode, Github). The backend tracks uploads, motivating students to contribute and enrich the platform's knowledge base. This robust backend empowers LazyEngineer, creating a collaborative learning environment for students.`;
+const proabout3 = `In a company project, I built a learning & support platform using a powerful backend (Node.js, JavaScript, TypeScript, Express.js, MongoDB) with a RESTful API for seamless data flow. Secure logins, efficient file handling, and features like chat and meetings run smoothly on this foundation. The user-facing side, built with React.js, Redux, Tailwind, and Redux Toolkit, offers an intuitive interface for browsing, building resumes, and tracking progress. Engaging quizzes and a clean design round out the platform. This project showcases my ability to bridge frontend and backend for user-centric development.`;
+const proabout4 = `This React application showcases my ability to build user-friendly e-commerce experiences. Using React.js, I crafted an intuitive interface for browsing products, searching by name, and filtering by type. Firebase serves as the secure backend, storing product data and facilitating user accounts. With a user-friendly shopping cart and checkout process, users can seamlessly add items and proceed to purchase. While the application doesn't track actual warehouse inventory (allowing unlimited purchases for demonstration purposes), it offers a persistent user experience. Login functionality allows users to access their carts and previous bills from any computer, fostering repeat purchases and building customer loyalty. This project highlights my ability to bridge frontend development with Firebase integration, resulting in a functional and user-centric e-commerce platform.`;
+const proabout5 = `In a personal project, I built a user-friendly image gallery web application. This platform empowers anyone to share their photos and organize them into folders, all without requiring login credentials. This open approach fosters a collaborative and easily accessible space for sharing visual content. Users can upload images, browse existing ones, and explore various folders to discover diverse collections. This project demonstrates my understanding of user experience and my ability to leverage web technologies to create a platform that encourages open sharing and fosters a vibrant online community.`;
+
 export const projects: Project[] = [
     {
-        title: "The Map Maker",
-        image: "./images/1.png",
-        link: "testing",
-        about: about2
+        title: "The Map Maker From Baghdad",
+        image: "./images/mapmaker.png",
+        link: "https://test.themapmakerfrombaghdad.com/",
+        about: proabout1
     },
     {
-        title: "First",
-        image: "./images/1.png",
-        link: "testing",
-        about: about2 + about2
+        title: "Lazy Engineer",
+        image: "./images/lazyengineer.png",
+        link: "https://lazyengineer.in/",
+        about: proabout2
     },
     {
-        title: "First",
-        image: "./images/1.png",
-        link: "testing",
-        about: about2
+        title: "IDreamCarrer",
+        image: "./images/idreamcareer.png",
+        link: "https://app.idreamcareer.com/",
+        about: proabout3
     },
     {
-        title: "First",
-        image: "./images/1.png",
-        link: "testing",
-        about: about2
+        title: "Apna Bazaar",
+        image: "./images/ecommerce.png",
+        link: "https://github.com/vinayak0505/ecommerce-react",
+        about: proabout4
     },
     {
-        title: "First",
-        image: "./images/1.png",
-        link: "testing",
-        about: about2
+        title: "Peekaboo",
+        image: "./images/gallery.png",
+        link: "https://vinayak0505.github.io/Gallery-Template/",
+        about: proabout5
     },
 ]
 
