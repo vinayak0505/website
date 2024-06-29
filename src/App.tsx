@@ -1,5 +1,6 @@
 
 import './App.css';
+import Certificates from './Certificates/Certificates';
 import Experience from './Experience/Experience';
 import Experties from './Experties/Experties';
 import Header from './Header/Header';
@@ -13,7 +14,8 @@ function App() {
       <Home />
       <Experties />
       <Experience />
-      <Projects/>
+      <Projects />
+      <Certificates />
     </div>
   );
 }

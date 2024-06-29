@@ -41,11 +41,6 @@
             background-color: var(--primary-color);
             content: url('../assets/download_icon.svg');
         }
-
-        &:hover {
-            background-color: var(--background-color);
-            color: var(--primary-color);
-        }
     }
 
     .bottom {
