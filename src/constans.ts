@@ -84,7 +84,7 @@ export const projects: Project[] = [
     {
         title: "Knigh In Floating Forest",
         image: "./images/knigh_in_floting_forest.png",
-        link: "https://vinayak0505.github.io/Gallery-Template/",
+        link: "https://vinayak0505.github.io/Knight-In-Floating-Forest/",
         about: proabout6
     },
 ]
