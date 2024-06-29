@@ -1,5 +1,5 @@
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import About from './About/About';
 import './App.css';
 import Certificates from './Certificates/Certificates';

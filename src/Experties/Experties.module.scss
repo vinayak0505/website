@@ -80,9 +80,10 @@
             font-weight: 500;
         }
 
-        .gap{
+        .gap {
             flex: 1;
         }
+
         .items {
             margin-top: 20px;
             display: flex;
@@ -104,7 +105,14 @@
 }
 
 @media screen and (max-width: 768px) {
-    .experties{
+    .experties {
         flex-direction: column-reverse;
+    }
+
+    .right {
+
+        .title {
+            text-decoration: none !important;
+        }
     }
 }
