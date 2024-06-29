@@ -24,6 +24,7 @@ a:active {
     --secondary-color-2: rgb(242, 112, 78);
     --secondary-color-3: rgb(238, 192, 72);
     font-family: EudoxusSansGX;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
