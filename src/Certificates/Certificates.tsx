@@ -1,7 +1,6 @@
 import { Certificate, certificates } from "../constans";
 import Styles from "./Certificates.module.scss";
 
-
 const Item = ({ item }: { item: Certificate }) => {
     return <a className={Styles.item} href={item.link}>
         <img className={Styles.image} src={item.image} alt={item.title} />
@@ -19,7 +18,7 @@ const Certificates = () => {
             </div>
             <div className={Styles.items}>
                 {
-                    certificates.map(item => <Item item={item} />)
+                    certificates.map((item, key) => <Item key={key} item={item} />)
                 }
             </div>
         </div>

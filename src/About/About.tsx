@@ -14,16 +14,16 @@ const About = () => {
             </div>
             <div className={Styles.align}>
                 {
-                    info.map((item, index) => <div>
-                        <div key={index} className={Styles.heading}>{item.heading}</div>
-                        <div key={index} >{item.info}</div>
+                    info.map((item, index) => <div key={index} >
+                        <div className={Styles.heading}>{item.heading}</div>
+                        <div>{item.info}</div>
                     </div>)
                 }
                 <div className={Styles.gap}></div>
                 <div className={Styles.icons}>
                     {
-                        icons.map((item, index) => <a title={item.tooltip} href={item.link}>
-                            <img className={Styles.icon} key={index} src={item.icon} alt={item.tooltip} />
+                        icons.map((item, index) => <a key={index} title={item.tooltip} href={item.link}>
+                            <img className={Styles.icon} src={item.icon} alt={item.tooltip} />
                         </a>
                         )
                     }

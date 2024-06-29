@@ -14,16 +14,20 @@
 
 .items {
     margin-top: 40px;
-    display: flex;
+    display: grid;
     gap: 40px;
     overflow: visible;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
 
     .item {
-        --shadow-color: rgba(0, 0, 0, 0.7);
+        --shadow-color: rgba(0, 0, 0, 0.5);
         --radius: 20px;
-        height: 200px;
+        height: 220px;
+        width: fit-content;
         position: relative;
         border: 1px solid white;
         -webkit-box-shadow: 10px 10px 26px -6px var(--shadow-color);
@@ -34,8 +38,8 @@
 
         .image {
             background-color: var(--secondary-color-3);
-            height: 200px;
-            min-width: 200px;
+            height: 220px;
+            min-width: 220px;
             border-radius: var(--radius);
         }
 

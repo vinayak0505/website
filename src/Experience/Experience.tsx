@@ -1,3 +1,4 @@
+import { Fragment } from 'react/jsx-runtime';
 import { experience } from '../constans';
 import Styles from './Experience.module.scss';
 
@@ -16,8 +17,8 @@ const Experience = () => {
         <div className={Styles.title}>My Work Experience</div>
         <div className={Styles.grid}>
             {
-                experience.map(item =>
-                    <>
+                experience.map((item, key) =>
+                    <Fragment key={key}>
                         <div>
                             <div className={Styles.heading}>{item.company}</div>
                             <div className={Styles.subheading}>{item.duration}</div>
@@ -27,7 +28,7 @@ const Experience = () => {
                             <div className={Styles.heading}>{item.designation}</div>
                             <div className={Styles.subheading}>{item.about}</div>
                         </div>
-                    </>
+                    </Fragment>
                 )
             }
         </div>
