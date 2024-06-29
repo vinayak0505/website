@@ -1,4 +1,5 @@
 
+import About from './About/About';
 import './App.css';
 import Certificates from './Certificates/Certificates';
 import Experience from './Experience/Experience';
@@ -16,6 +17,7 @@ function App() {
       <Experience />
       <Projects />
       <Certificates />
+      <About />
     </div>
   );
 }

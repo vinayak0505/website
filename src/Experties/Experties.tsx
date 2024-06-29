@@ -33,7 +33,7 @@ const Experties = () => {
                 />
             </div>
             <div className={Styles.right}>
-                <div className={Styles.title}>Things that i do</div>
+                <div className={Styles.title}>Things that I do</div>
                 <div className={Styles.about}>{about}</div>
                 <div className={Styles.about}>{about2}</div>
                 <div className={Styles.gap}/>

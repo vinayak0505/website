@@ -74,7 +74,7 @@ export interface Certificate {
 
 export const certificates: Certificate[] = [
     {
-        title: "The Map Maker",
+        title: "Mongo Db Certified Associate Developer",
         image: "./images/1.png",
         link: "testing"
     },
@@ -102,5 +102,48 @@ export const certificates: Certificate[] = [
         title: "First",
         image: "./images/1.png",
         link: "testing"
+    }
+]
+
+export const email = {
+    emailId: "vinayakaggarwal05@gmail.com",
+    subject: "Hi, I would like to create something awesome with you",
+};
+
+export const info = [
+    {
+        heading: "Address",
+        info: "Gurgaon, Haryana, India"
+    },
+    {
+        heading: "Phone",
+        info: "8130388400"
+    },
+    {
+        heading: "Email",
+        info: email.emailId
+    }
+]
+
+export const icons = [
+    {
+        icon: "./images/leetcode.png",
+        link: "https://www.linkedin.com/in/vinayakaggarwal05/",
+        tooltip: "LinkedIn"
+    },
+    {
+        icon: "./images/leetcode.png",
+        link: "https://github.com/vinayakaggarwal05",
+        tooltip: "GitHub"
+    },
+    {
+        icon: "./images/leetcode.png",
+        link: "https://twitter.com/vinayakaggarwal05",
+        tooltip: "Leetcode",
+    },
+    {
+        icon: "./images/leetcode.png",
+        link: "https://twitter.com/vinayakaggarwal05",
+        tooltip: "CodeChef",
     }
 ]

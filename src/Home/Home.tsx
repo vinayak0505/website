@@ -9,7 +9,7 @@ const Home = () => {
             </div>
             <a className={Styles.resume} href='https://drive.google.com/drive/folders/1rquZ_MipJIYiSyocuwfGbvmUqo3D9ngP' target='_blank' rel='noreferrer'>Download Resume</a>
             <div className={Styles.bottom}>
-                <div className={Styles.collage}> Out of 10 CGPA<br/>Software Engineering(2019 - 2023)<br/>Guru Teg Bhadur Institute of Technology</div>
+                <div className={Styles.collage}> Out of 10 CGPA<br/>Software Engineering (June 2019 - June 2023)<br/>Guru Teg Bhadur Institute of Technology</div>
                 <div className={Styles.experience}> Years of Experience<br/>+1.5 Years of Internship</div>
             </div>
         </div>
