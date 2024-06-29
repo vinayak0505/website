@@ -19,12 +19,12 @@ const Experience = () => {
             {
                 experience.map((item, key) =>
                     <Fragment key={key}>
-                        <div>
+                        <div className={Styles.left}>
                             <div className={Styles.heading}>{item.company}</div>
                             <div className={Styles.subheading}>{item.duration}</div>
                         </div>
                         <Divider color={item.color} />
-                        <div>
+                        <div className={Styles.right}>
                             <div className={Styles.heading}>{item.designation}</div>
                             <div className={Styles.subheading}>{item.about}</div>
                         </div>

@@ -19,6 +19,7 @@
     }
 
     .resume {
+        margin-top: 20px;
         width: fit-content;
         border: 1px solid var(--primary-color);
         padding-right: 16px;
@@ -46,9 +47,9 @@
     .bottom {
         display: flex;
         justify-content: space-between;
-        margin-top: 50px;
 
         .collage {
+            margin-top: 50px;
             font-size: 1rem;
 
             &::before {
@@ -58,6 +59,7 @@
         }
 
         .experience {
+            margin-top: 50px;
             font-size: 1rem;
             text-align: right;
 
@@ -66,5 +68,23 @@
                 font-size: 3rem;
             }
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top {
+        flex-direction: column;
+
+        .title {
+            font-size: 3rem !important;
+        }
+        .subtitle{
+            margin-top: 20px;
+            line-height: 20px !important;
+        }
+    }
+
+    .bottom {
+        flex-direction: column;
     }
 }

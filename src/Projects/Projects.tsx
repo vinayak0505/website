@@ -16,7 +16,7 @@ const Projects = () => {
         <div id="projects" className={Styles.projects}>
             <div className={Styles.title}>My Latest Work</div>
             <div className={Styles.sub}>
-                <div>Perfect solution for digital experience</div>
+                <div>From Code to Clicks: Where Ideas Take Shape!</div>
                 <a href="https://github.com/vinayak0505" className={Styles.right}>Explore More on GitHub</a>
             </div>
             <div className={Styles.items}>
