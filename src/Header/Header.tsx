@@ -9,6 +9,7 @@ const Header = ({showTitle, showLine}: {showTitle: boolean, showLine: boolean}) 
                 <a href='#experience' className={Styles.item}>Experience</a>
                 <a href='#projects' className={Styles.item}>Projects</a>
                 <a href='#certificates' className={Styles.item}>Certificates</a>
+                <a href='#skills' className={Styles.item}>Skills</a>
                 <a href='#contact' className={Styles.item}>Contact</a>
             </div>
         </div>

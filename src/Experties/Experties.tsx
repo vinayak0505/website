@@ -39,7 +39,7 @@ const Experties = () => {
                 <div className={Styles.gap}/>
                 <div className={Styles.items}>
                     <a href='https://codechef.com/users/vinayakagg05' target='_blank' rel='noreferrer'>
-                        <div className={Styles.title}>4Star</div>
+                        <div className={Styles.title}>4★</div>
                         <div className={Styles.about}>CodeChef</div>
                     </a>
                     <a href='https://leetcode.com/u/vinayakaggarwal05/' target='_blank' rel='noreferrer'>
