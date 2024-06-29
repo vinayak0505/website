@@ -7,7 +7,7 @@ const Item = ({ item }: { item: Project }) => {
             <img className={Styles.image} src={item.image} alt={item.title} />
             <div className={Styles.heading}>{item.title}</div>
             <div >{item.about}</div>
-            <a className={Styles.button} href={item.link} >Explore</a>
+            <a className={Styles.button} href={item.link} target='_blank' rel='noreferrer'>Explore</a>
         </div>
     )
 }
@@ -17,7 +17,7 @@ const Projects = () => {
             <div className={Styles.title}>My Latest Work</div>
             <div className={Styles.sub}>
                 <div>From Code to Clicks: Where Ideas Take Shape!</div>
-                <a href="https://github.com/vinayak0505" className={Styles.right}>Explore More on GitHub</a>
+                <a href="https://github.com/vinayak0505" target='_blank' rel='noreferrer' className={Styles.right}>Explore More on GitHub</a>
             </div>
             <div className={Styles.items}>
                 {

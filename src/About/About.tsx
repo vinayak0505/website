@@ -22,7 +22,7 @@ const About = () => {
                 <div className={Styles.gap}></div>
                 <div className={Styles.icons}>
                     {
-                        icons.map((item, index) => <a key={index} title={item.tooltip} href={item.link}>
+                        icons.map((item, index) => <a key={index} title={item.tooltip} href={item.link} target='_blank' rel='noreferrer'>
                             <img className={Styles.icon} src={item.icon} alt={item.tooltip} />
                         </a>
                         )
