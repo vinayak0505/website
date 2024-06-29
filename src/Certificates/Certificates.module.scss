@@ -1,5 +1,5 @@
 .certificates {
-    padding: 64px;
+    padding: var(--padding);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,6 +63,21 @@
             .title {
                 translate: 0px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .item {
+        width: 100% !important;
+        .image{
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .title{
+            translate: 0px !important;
+            font-size: 1rem !important;
         }
     }
 }

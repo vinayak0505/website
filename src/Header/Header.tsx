@@ -1,9 +1,9 @@
 import Styles from './Header.module.scss';
 
-const Header = () => {
+const Header = ({showTitle, showLine}: {showTitle: boolean, showLine: boolean}) => {
     return (
-        <div className={Styles.header}>
-            <a href='#about' className={Styles.name}>Vinayak</a>
+        <div className={Styles.header} style={{ borderBottom: showLine ? '1px solid var(--primary-color)' : 'none' }}>
+            <a href='#about' className={Styles.name} style={{ opacity: showTitle ? '1' : '0' }}>Vinayak</a>
             <div className={Styles.nav}>
                 <a href='#expertise' className={Styles.item}>Experties</a>
                 <a href='#experience' className={Styles.item}>Experience</a>

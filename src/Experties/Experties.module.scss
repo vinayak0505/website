@@ -1,6 +1,6 @@
 .experties {
     display: flex;
-    padding: 64px;
+    padding: var(--padding);
     gap: 40px;
 
     .left {
@@ -100,5 +100,11 @@
                 font-weight: 500;
             }
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .experties{
+        flex-direction: column-reverse;
     }
 }
