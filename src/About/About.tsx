@@ -23,7 +23,7 @@ const About = () => {
                 <div className={Styles.icons}>
                     {
                         icons.map((item, index) => <a key={index} title={item.tooltip} href={item.link} target='_blank' rel='noreferrer'>
-                            <img className={Styles.icon} src={item.icon} alt={item.tooltip} />
+                            <img className={Styles.icon} src={process.env.PUBLIC_URL + item.icon} alt={item.tooltip} />
                         </a>
                         )
                     }

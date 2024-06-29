@@ -8,6 +8,7 @@ import Experties from './Experties/Experties';
 import Header from './Header/Header';
 import Home from './Home/Home';
 import Projects from './Projects/Projects';
+import Skills from './Skills/Skills';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
       <Experience />
       <Projects />
       <Certificates />
+      <Skills/>
       <About />
     </div>
   );

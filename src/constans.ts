@@ -53,37 +53,37 @@ const proabout6 = `Take a fantastical leap into "Knight-In-Floating-Forest," a 2
 export const projects: Project[] = [
     {
         title: "The Map Maker From Baghdad",
-        image: "./images/mapmaker.png",
+        image: "/images/mapmaker.png",
         link: "https://test.themapmakerfrombaghdad.com/",
         about: proabout1
     },
     {
         title: "Lazy Engineer",
-        image: "./images/lazyengineer.png",
+        image: "/images/lazyengineer.png",
         link: "https://lazyengineer.in/",
         about: proabout2
     },
     {
         title: "IDreamCarrer",
-        image: "./images/idreamcareer.png",
+        image: "/images/idreamcareer.png",
         link: "https://app.idreamcareer.com/",
         about: proabout3
     },
     {
         title: "Apna Bazaar",
-        image: "./images/ecommerce.png",
+        image: "/images/ecommerce.png",
         link: "https://github.com/vinayak0505/ecommerce-react",
         about: proabout4
     },
     {
         title: "Peekaboo",
-        image: "./images/gallery.png",
+        image: "/images/gallery.png",
         link: "https://vinayak0505.github.io/Gallery-Template/",
         about: proabout5
     },
     {
         title: "Knigh In Floating Forest",
-        image: "./images/knigh_in_floting_forest.png",
+        image: "/images/knigh_in_floting_forest.png",
         link: "https://vinayak0505.github.io/Knight-In-Floating-Forest/",
         about: proabout6
     },
@@ -98,27 +98,27 @@ export interface Certificate {
 export const certificates: Certificate[] = [
     {
         title: "MongoDb Certified Associate Developer",
-        image: "./images/mongo.jpg",
+        image: "/images/mongo.jpg",
         link: "https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/5392bda6-ad8e-4c52-871a-71dc83ba3d04-vinayak-agarwal-c3fa3317-086e-45bb-b14a-1d50630c2ce2-certificate.pdf"
     },
     {
         title: "Back End | Full Stack Web Development in Node.js",
-        image: "./images/node.jpg",
+        image: "/images/node.jpg",
         link: "http://certificate.codingninjas.com/verify/b946d63ff75aa1b8"
     },
     {
         title: "Redis | RU101 Certificate | Redis University",
-        image: "./images/redis.jpg",
+        image: "/images/redis.jpg",
         link: "https://university.redis.com/certificates/5436c2cc10794d638d619de5de4c57df"
     },
     {
         title: "Advance Front-End Web Development with React - Full Stack",
-        image: "./images/react.jpg",
+        image: "/images/react.jpg",
         link: "http://certificate.codingninjas.com/verify/ad2698902163bc51"
     },
     {
         title: "Advance Graph Theory",
-        image: "./images/graph.jpeg",
+        image: "/images/graph.jpeg",
         link: "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL23CS26S4463027803132777"
     }
 ]
@@ -145,23 +145,126 @@ export const info = [
 
 export const icons = [
     {
-        icon: "./images/linkdin.svg",
+        icon: "/images/linkdin.svg",
         link: "https://www.linkedin.com/in/vinayakaggarwal05/",
         tooltip: "LinkedIn"
     },
     {
-        icon: "./images/github.svg",
+        icon: "/images/github.svg",
         link: "https://github.com/vinayak0505",
         tooltip: "GitHub"
     },
     {
-        icon: "./images/leetcode.svg",
+        icon: "/images/leetcode.svg",
         link: "https://leetcode.com/u/vinayakaggarwal05/",
         tooltip: "Leetcode",
     },
     {
-        icon: "./images/codechef.svg",
+        icon: "/images/codechef.svg",
         link: "https://www.codechef.com/users/vinayakagg05",
         tooltip: "CodeChef",
+    }
+]
+
+
+export const skills = [
+    {
+        type: "Frontend",
+        items: [
+            {
+                image: "/images/html.png",
+                name: "HTML",
+            },
+            {
+                image: "/images/css.png",
+                name: "CSS",
+            },
+            {
+                image: "/images/react.png",
+                name: "React",
+            },
+            {
+                image: "/images/sass.png",
+                name: "SASS",
+            },
+            {
+                image: "/images/bootstrap.png",
+                name: "Bootstrap",
+            },
+            {
+                image: "/images/javascript.png",
+                name: "Javascript",
+            },
+            {
+                image: "/images/next.png",
+                name: "NextJS",
+            },
+            {
+                image: "/images/tailwind.png",
+                name: "Tailwind",
+            },
+            {
+                image: "/images/redux.png",
+                name: "Redux",
+            }
+        ]
+    },
+    {
+        type: "Backend",
+        items: [
+            {
+                image: "/images/nodejs.png",
+                name: "Node",
+            },
+            {
+                image: "/images/express.png",
+                name: "Express",
+            },
+            {
+                image: "/images/typescript.png",
+                name: "Typescript",
+            },
+            {
+                image: "/images/mongo.png",
+                name: "MongoDB",
+            },
+            {
+                image: "/images/redis.png",
+                name: "Redis",
+            },
+            {
+                image: "/images/sql.png",
+                name: "MySQL",
+            },
+            {
+                name: "C",
+                image: "/images/c.png"
+            },
+            {
+                name: "C++",
+                image: "/images/cplusplus.png"
+            },
+            {
+                name: "Java",
+                image: "/images/java.png"
+            },
+        ]
+    },
+    {
+        type: "Others",
+        items: [
+            {
+                image: "/images/git.png",
+                name: "Git",
+            },
+            {
+                image: "/images/aws.png",
+                name: "AWS",
+            },
+            {
+                image: "/images/google_cloud.png",
+                name: "GCP",
+            }
+        ]
     }
 ]

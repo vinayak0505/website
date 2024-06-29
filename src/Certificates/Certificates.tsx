@@ -3,7 +3,7 @@ import Styles from "./Certificates.module.scss";
 
 const Item = ({ item }: { item: Certificate }) => {
     return <a className={Styles.item} href={item.link} target='_blank' rel='noreferrer'>
-        <img className={Styles.image} src={item.image} alt={item.title} />
+        <img className={Styles.image} src={process.env.PUBLIC_URL + item.image} alt={item.title} />
         <div className={Styles.title}>{item.title}</div>
     </a>
 }

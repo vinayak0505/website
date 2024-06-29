@@ -4,7 +4,7 @@ import Styles from "./Projects.module.scss";
 const Item = ({ item }: { item: Project }) => {
     return (
         <div className={Styles.item}>
-            <img className={Styles.image} src={item.image} alt={item.title} />
+            <img className={Styles.image} src={process.env.PUBLIC_URL + item.image} alt={item.title} />
             <div className={Styles.heading}>{item.title}</div>
             <div >{item.about}</div>
             <a className={Styles.button} href={item.link} target='_blank' rel='noreferrer'>Explore</a>
