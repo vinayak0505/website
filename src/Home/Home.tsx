@@ -19,7 +19,7 @@ const Home = ({ setShowTitle }: { setShowTitle: (value: boolean) => void }) => {
         <div id='about' className={Styles.home}>
             <div className={Styles.top}>
                 <div ref={titleRef} className={Styles.title}>Hi there,<br />I'm <u>Vinayak Agarwal</u></div>
-                <div className={Styles.subtitle}>I design and develop<br />MERN Applications.</div>
+                <div className={Styles.subtitle}>I design and develop<br />JAVA + MERN Applications.</div>
             </div>
             <a className={Styles.resume} href='https://drive.google.com/drive/folders/1rquZ_MipJIYiSyocuwfGbvmUqo3D9ngP' target='_blank' rel='noreferrer'>Download Resume</a>
             <div className={Styles.bottom}>
