@@ -30,7 +30,7 @@ export const experience = [
     {
         company: "Artivatic.ai",
         duration: "Feb 2021 - Jun 2022",
-        color: "var(--secondary-color-1)",
+        color: "var(--secondary-color-4)",
         designation: "Software Engineer Intern",
         about: exp2about
     },
@@ -38,55 +38,106 @@ export const experience = [
 
 export interface Project {
     title: string
-    image: string
-    link: string
+    images: { src: string, alt: string }[]
+    links: { label: string, url: string }[]
     about: string
+    technologies: string[]
+    highlights?: string[]
+    featured?: boolean
+    status?: string
 }
-
-const proabout1 = `This ambitious personal project showcases my full-stack development capabilities. Built with React, Redux, and TypeScript, it presents a dynamic grid-based user interface where exploration takes center stage. Users can navigate freely in any direction, encountering various elements like cyclocinemas, interludes, and epilogues. The interactive map with clickable points reveals captivating content like images, videos, and galleries. Login functionality allows users to curate playlists and share specific pages.  This project further integrates "Textgraphy" – a user-generated content feature displaying user-written text on a shared page.  "The Map Maker From Baghdad" demonstrates my passion for crafting immersive user experiences and leveraging technology for creative storytelling.`;
-const proabout2 = `LazyEngineer, my personal project, boasts a powerful backend built with Node.js, JavaScript, TypeScript, Express.js, and MongoDB. This tech stack ensures a seamless experience. A well-designed RESTful API facilitates communication, allowing students to browse, download, and upload a variety of learning materials – notes, practice files, past papers, and even textbooks. Secure login and profile creation personalize the experience and track content ownership. Efficient file management ensures secure storage and quick retrieval. LazyEngineer goes beyond content. A notification system keeps students informed, while user profiles allow them to showcase skills and online profiles (LeetCode, Github). The backend tracks uploads, motivating students to contribute and enrich the platform's knowledge base. This robust backend empowers LazyEngineer, creating a collaborative learning environment for students.`;
-const proabout3 = `In a company project, I built a learning & support platform using a powerful backend (Node.js, JavaScript, TypeScript, Express.js, MongoDB) with a RESTful API for seamless data flow. Secure logins, efficient file handling, and features like chat and meetings run smoothly on this foundation. The user-facing side, built with React.js, Redux, Tailwind, and Redux Toolkit, offers an intuitive interface for browsing, building resumes, and tracking progress. Engaging quizzes and a clean design round out the platform. This project showcases my ability to bridge frontend and backend for user-centric development.`;
-const proabout4 = `This React application showcases my ability to build user-friendly e-commerce experiences. Using React.js, I crafted an intuitive interface for browsing products, searching by name, and filtering by type. Firebase serves as the secure backend, storing product data and facilitating user accounts. With a user-friendly shopping cart and checkout process, users can seamlessly add items and proceed to purchase. While the application doesn't track actual warehouse inventory (allowing unlimited purchases for demonstration purposes), it offers a persistent user experience. Login functionality allows users to access their carts and previous bills from any computer, fostering repeat purchases and building customer loyalty. This project highlights my ability to bridge frontend development with Firebase integration, resulting in a functional and user-centric e-commerce platform.`;
-const proabout5 = `In a personal project, I built a user-friendly image gallery web application. This platform empowers anyone to share their photos and organize them into folders, all without requiring login credentials. This open approach fosters a collaborative and easily accessible space for sharing visual content. Users can upload images, browse existing ones, and explore various folders to discover diverse collections. This project demonstrates my understanding of user experience and my ability to leverage web technologies to create a platform that encourages open sharing and fosters a vibrant online community.`;
-const proabout6 = `Take a fantastical leap into "Knight-In-Floating-Forest," a 2D platformer game I built using Godot and GDScript. Explore whimsical landscapes, collecting coins and mastering challenging levels.  This web-playable adventure unlocks new levels as you progress, keeping you engaged and eager to conquer the next floating realm.  Whether you prefer the precision of keyboard controls or the ease of on-screen touch buttons, "Knight-In-Floating-Forest" offers a captivating and accessible experience.  Local storage ensures your progress is saved, so you can continue your journey as the valiant knight, conquering each level and uncovering the secrets of the floating forest.`;
 
 export const projects: Project[] = [
     {
+        title: "LazyEngineer",
+        featured: true,
+        images: [
+            { src: "/images/lazyengineer.png", alt: "LazyEngineer resource-sharing web app" },
+            { src: "/images/lazyengineer-books.jpg", alt: "Books resource category on LazyEngineer" }
+        ],
+        links: [
+            { label: "Frontend code", url: "https://github.com/vinayak0505/lazy-engineer-react" },
+            { label: "Backend code", url: "https://github.com/vinayak0505/LazyEngineerBackend" }
+        ],
+        about: "A student-focused resource-sharing platform for notes, question papers, practical files, books, and jobs. Students can contribute materials, manage profiles, and download resources, with an Android app supporting offline access.",
+        technologies: ["React", "Android", "Node.js", "Express", "MongoDB", "Spring Boot"],
+        highlights: [
+            "Built web and Android experiences for student-contributed resources.",
+            "Added multi-provider sign-in and refactored the backend to Spring Boot.",
+            "MongoDB indexing improved an API response from 0.3s to 0.2s in a Postman test."
+        ]
+    },
+    {
         title: "The Map Maker From Baghdad",
-        image: "/images/mapmaker.png",
-        link: "https://test.themapmakerfrombaghdad.com/",
-        about: proabout1
+        featured: true,
+        images: [
+            { src: "/images/mapmaker.png", alt: "The Map Maker From Baghdad interactive story experience" },
+            { src: "/images/mapmaker-archive.jpg", alt: "The Map Maker From Baghdad archive page" },
+            { src: "/images/mapmaker-about.jpg", alt: "The Map Maker From Baghdad about page" }
+        ],
+        links: [
+            { label: "Live experience", url: "https://test.themapmakerfrombaghdad.com/" },
+            { label: "Source code", url: "https://github.com/vinayak0505/mapmaker-frontend" }
+        ],
+        about: "An interactive, grid-based story experience. Visitors explore clickable points to discover films, interludes, galleries, and user-written text, with features to create playlists and share pages.",
+        technologies: ["React", "Redux", "TypeScript"],
+        highlights: [
+            "Designed a non-linear interface for exploring stories and media.",
+            "Added user playlists, shareable pages, and the Textgraphy feature.",
+            "Implemented lazy loading for images."
+        ]
     },
     {
-        title: "Lazy Engineer",
-        image: "/images/lazyengineer.png",
-        link: "https://lazyengineer.in/",
-        about: proabout2
+        title: "Flight Status & Booking",
+        featured: true,
+        images: [
+            { src: "/images/flight-status-main.jpg", alt: "Flight Status dashboard with live flight information" },
+            { src: "/images/flight-status-seats.jpg", alt: "Flight Status seat selection interface" }
+        ],
+        links: [
+            { label: "Frontend code", url: "https://github.com/vinayak0505/flight-status-react" },
+            { label: "Backend code", url: "https://github.com/vinayak0505/FlightStatus" }
+        ],
+        about: "A full-stack flight app for checking live status, booking seats, and managing tickets, with authenticated user and admin flows.",
+        technologies: ["React", "Java", "Spring Boot", "PostgreSQL", "JWT", "Firebase Cloud Messaging"],
+        highlights: [
+            "Built flight status, seat booking, and ticket-management flows.",
+            "Added admin flight updates and authentication with Spring Security and JWT.",
+            "Integrated push and email notifications for flight and booking updates."
+        ]
     },
     {
-        title: "IDreamCarrer",
-        image: "/images/idreamcareer.png",
-        link: "https://app.idreamcareer.com/",
-        about: proabout3
+        title: "LazyFlatmates",
+        status: "Work in Progress",
+        images: [],
+        links: [
+            { label: "Frontend code", url: "https://github.com/vinayak0505/lasy-flatmates-frontend" },
+            { label: "Backend code", url: "https://github.com/vinayak0505/LazyFlatmates-Backend" }
+        ],
+        about: "A platform in development to help people find nearby flats and connect with potential flatmates.",
+        technologies: ["React", "TypeScript", "Java", "Spring Boot"]
     },
     {
         title: "Apna Bazaar",
-        image: "/images/ecommerce.png",
-        link: "https://github.com/vinayak0505/ecommerce-react",
-        about: proabout4
+        images: [{ src: "/images/ecommerce.png", alt: "Apna Bazaar e-commerce interface" }],
+        links: [{ label: "Source code", url: "https://github.com/vinayak0505/ecommerce-react" }],
+        about: "A React and Firebase storefront with product search, category filters, a shopping cart, and saved user orders.",
+        technologies: ["React", "Firebase"]
     },
     {
         title: "Peekaboo",
-        image: "/images/gallery.png",
-        link: "https://vinayak0505.github.io/Gallery-Template/",
-        about: proabout5
+        images: [{ src: "/images/gallery.png", alt: "Peekaboo image gallery" }],
+        links: [{ label: "Live project", url: "https://vinayak0505.github.io/Gallery-Template/" }],
+        about: "A lightweight image gallery for uploading, browsing, and organizing photos into folders.",
+        technologies: ["Web"]
     },
     {
-        title: "Knigh In Floating Forest",
-        image: "/images/knigh_in_floting_forest.png",
-        link: "https://vinayak0505.github.io/Knight-In-Floating-Forest/",
-        about: proabout6
-    },
+        title: "Knight in Floating Forest",
+        images: [{ src: "/images/knigh_in_floting_forest.png", alt: "Knight in Floating Forest 2D game" }],
+        links: [{ label: "Play the game", url: "https://vinayak0505.github.io/Knight-In-Floating-Forest/" }],
+        about: "A web-playable 2D platform game with keyboard and touch controls, collectible coins, and saved progress.",
+        technologies: ["Godot", "GDScript"]
+    }
 ]
 
 export interface Certificate {
