@@ -142,35 +142,94 @@ export const projects: Project[] = [
 
 export interface Certificate {
     title: string
-    image: string
-    link: string
+    issuer: string
+    date?: string
+    detail?: string
+    category: string
+    image?: string
+    link?: string
 }
 
 export const certificates: Certificate[] = [
     {
-        title: "MongoDb Certified Associate Developer",
+        title: "Associate Cloud Engineer",
+        issuer: "Google Cloud",
+        date: "Issued Feb 16, 2025 · Expires Feb 16, 2028",
+        category: "Professional certification",
+        image: "/images/google-cloud-ace.jpg",
+        link: "https://www.credly.com/badges/7a946d9a-8df3-48da-92e4-1bbbba761e82/public_url"
+    },
+    {
+        title: "MongoDB Certified Associate Developer",
+        issuer: "MongoDB, Inc.",
+        date: "Issued May 19, 2024 · No expiry",
+        category: "Professional certification",
         image: "/images/mongo.jpg",
         link: "https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/5392bda6-ad8e-4c52-871a-71dc83ba3d04-vinayak-agarwal-c3fa3317-086e-45bb-b14a-1d50630c2ce2-certificate.pdf"
     },
     {
-        title: "Back End | Full Stack Web Development in Node.js",
+        title: "Back End / Full Stack Web Development in Node.js",
+        issuer: "Coding Ninjas",
+        date: "Feb–May 2023 · Top Performer",
+        category: "Course certificate",
         image: "/images/node.jpg",
         link: "http://certificate.codingninjas.com/verify/b946d63ff75aa1b8"
     },
     {
-        title: "Redis | RU101 Certificate | Redis University",
+        title: "RU101: Introduction to Redis Data Structures",
+        issuer: "Redis University",
+        date: "Jun 2, 2024",
+        category: "Course certificate",
         image: "/images/redis.jpg",
         link: "https://university.redis.com/certificates/5436c2cc10794d638d619de5de4c57df"
     },
     {
         title: "Advance Front-End Web Development with React - Full Stack",
+        issuer: "Coding Ninjas",
+        date: "May–Aug 2023 · Top Performer",
+        category: "Course certificate",
         image: "/images/react.jpg",
         link: "http://certificate.codingninjas.com/verify/ad2698902163bc51"
     },
     {
-        title: "Advance Graph Theory",
+        title: "Advanced Graph Theory",
+        issuer: "NPTEL, IIT Kanpur",
+        date: "Jan–Mar 2023 · Elite (81%)",
+        detail: "543 learners certified.",
+        category: "Course certificate",
         image: "/images/graph.jpeg",
         link: "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL23CS26S4463027803132777"
+    },
+    {
+        title: "Internship letter and certificate",
+        issuer: "Artivatic.ai",
+        detail: "Certificate available on LinkedIn.",
+        category: "Internship documentation",
+        image: "/images/artivatic-internship.jpg"
+    },
+    {
+        title: "Certificate of Recognition",
+        issuer: "iDreamCareer · Founder & CEO",
+        date: "Oct 10, 2022",
+        detail: "Recognized for making a real impact in enabling student success.",
+        category: "Recognition",
+        image: "/images/idc-recognition-2022.jpg"
+    },
+    {
+        title: "Certificate of Recognition",
+        issuer: "iDreamCareer · Founder & CEO",
+        date: "Apr–Jun 2024 (Q2)",
+        detail: "Recognized for making a real impact in enabling student success.",
+        category: "Recognition",
+        image: "/images/idc-recognition-2024-q2.jpg"
+    },
+    {
+        title: "Certificate of Recognition",
+        issuer: "iDreamCareer · Founder & CEO",
+        date: "Early 2025 · Certificate undated",
+        detail: "Recognized for exceptional performance as a Software Engineer - Full Stack during the past quarter.",
+        category: "Recognition",
+        image: "/images/idc-recognition-2025.jpg"
     }
 ]
 
