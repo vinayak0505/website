@@ -45,28 +45,38 @@
     }
 
     .bottom {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 48px;
 
-        .collage {
-            margin-top: 50px;
-            font-size: 1rem;
-
-            &::before {
-                content: "9";
-                font-size: 3rem;
-            }
-        }
-
+        .collage,
         .experience {
             margin-top: 50px;
             font-size: 1rem;
+        }
+
+        .experience {
             text-align: right;
 
-            &::before {
-                content: "2+";
-                font-size: 3rem;
+            .metric {
+                justify-content: flex-end;
             }
+        }
+
+        .metric {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+        }
+
+        .value {
+            font-size: 3rem;
+            line-height: 1;
+        }
+
+        .detail {
+            margin-top: 8px;
+            line-height: 1.6;
         }
     }
 }
@@ -85,6 +95,15 @@
     }
 
     .bottom {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .bottom .experience {
+        text-align: left;
+
+        .metric {
+            justify-content: flex-start;
+        }
     }
 }
