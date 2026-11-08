@@ -14,9 +14,13 @@ const About = () => {
             </div>
             <div className={Styles.align}>
                 {
-                    info.map((item, index) => <div key={index} >
+                    info.map((item) => <div key={item.heading}>
                         <div className={Styles.heading}>{item.heading}</div>
-                        <div>{item.info}</div>
+                        {item.link ? (
+                            <a className={Styles.contactLink} href={item.link}>{item.info}</a>
+                        ) : (
+                            <div>{item.info}</div>
+                        )}
                     </div>)
                 }
                 <div className={Styles.gap}></div>

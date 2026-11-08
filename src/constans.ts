@@ -241,15 +241,17 @@ export const email = {
 export const info = [
     {
         heading: "Address",
-        info: "Gurgaon, Haryana, India"
+        info: "Hyderabad, India"
     },
     {
         heading: "Phone",
-        info: "8130388400"
+        info: "8130388400",
+        link: "tel:+918130388400"
     },
     {
         heading: "Email",
-        info: email.emailId
+        info: email.emailId,
+        link: `mailto:${email.emailId}`
     }
 ]
 
