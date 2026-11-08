@@ -277,104 +277,106 @@ export const icons = [
 ]
 
 
-export const skills = [
+type SkillTier = "diamond" | "gold" | "silver";
+type Skill = { name: string; image?: string; tier?: SkillTier };
+
+export const skills: { type: string; items: Skill[] }[] = [
     {
-        type: "Frontend",
+        type: "Backend & APIs",
         items: [
-            {
-                image: "/images/html.png",
-                name: "HTML",
-            },
-            {
-                image: "/images/css.png",
-                name: "CSS",
-            },
-            {
-                image: "/images/react.png",
-                name: "React",
-            },
-            {
-                image: "/images/sass.png",
-                name: "SASS",
-            },
-            {
-                image: "/images/bootstrap.png",
-                name: "Bootstrap",
-            },
-            {
-                image: "/images/javascript.png",
-                name: "Javascript",
-            },
-            {
-                image: "/images/next.png",
-                name: "NextJS",
-            },
-            {
-                image: "/images/tailwind.png",
-                name: "Tailwind",
-            },
-            {
-                image: "/images/redux.png",
-                name: "Redux",
-            }
+            { name: "Spring Boot", tier: "diamond" },
+            { image: "/images/nodejs.png", name: "Node.js", tier: "diamond" },
+            { image: "/images/express.png", name: "Express", tier: "gold" },
+            { name: "WebSockets", tier: "gold" },
+            { name: "FastAPI", tier: "silver" },
+            { name: "GraphQL" },
+            { name: "Kafka" },
         ]
     },
     {
-        type: "Backend",
+        type: "Programming Languages",
         items: [
-            {
-                image: "/images/nodejs.png",
-                name: "Node",
-            },
-            {
-                image: "/images/express.png",
-                name: "Express",
-            },
-            {
-                image: "/images/typescript.png",
-                name: "Typescript",
-            },
-            {
-                image: "/images/mongo.png",
-                name: "MongoDB",
-            },
-            {
-                image: "/images/redis.png",
-                name: "Redis",
-            },
-            {
-                image: "/images/sql.png",
-                name: "MySQL",
-            },
-            {
-                name: "C",
-                image: "/images/c.png"
-            },
-            {
-                name: "C++",
-                image: "/images/cplusplus.png"
-            },
-            {
-                name: "Java",
-                image: "/images/java.png"
-            },
+            { image: "/images/java.png", name: "Java", tier: "diamond" },
+            { image: "/images/javascript.png", name: "JavaScript", tier: "diamond" },
+            { image: "/images/typescript.png", name: "TypeScript", tier: "diamond" },
+            { name: "Dart", tier: "gold" },
+            { image: "/images/cplusplus.png", name: "C++", tier: "gold" },
+            { name: "Python", tier: "silver" },
+            { name: "Kotlin", tier: "silver" },
+            { image: "/images/c.png", name: "C", tier: "silver" },
+            { name: "GDScript" },
         ]
     },
     {
-        type: "Others",
+        type: "Frontend & UI",
         items: [
-            {
-                image: "/images/git.png",
-                name: "Git",
-            },
-            {
-                image: "/images/aws.png",
-                name: "AWS",
-            },
-            {
-                image: "/images/google_cloud.png",
-                name: "GCP",
-            }
+            { image: "/images/react.png", name: "React", tier: "diamond" },
+            { name: "Meteor", tier: "gold" },
+            { name: "Material UI", tier: "gold" },
+            { name: "AG Grid", tier: "gold" },
+            { image: "/images/next.png", name: "Next.js", tier: "gold" },
+            { image: "/images/redux.png", name: "Redux", tier: "gold" },
+            { image: "/images/html.png", name: "HTML", tier: "gold" },
+            { image: "/images/css.png", name: "CSS", tier: "gold" },
+            { image: "/images/sass.png", name: "Sass", tier: "silver" },
+            { image: "/images/bootstrap.png", name: "Bootstrap", tier: "silver" },
+            { image: "/images/tailwind.png", name: "Tailwind CSS", tier: "silver" },
+        ]
+    },
+    {
+        type: "Mobile",
+        items: [
+            { name: "Android", tier: "gold" },
+            { name: "Flutter", tier: "gold" },
+            { name: "Firebase Cloud Messaging" },
+        ]
+    },
+    {
+        type: "Data & Storage",
+        items: [
+            { image: "/images/mongo.png", name: "MongoDB", tier: "gold" },
+            { image: "/images/firebase.png", name: "Firestore", tier: "gold" },
+            { image: "/images/google_cloud.png", name: "BigQuery", tier: "gold" },
+            { name: "S3", tier: "gold" },
+            { name: "Azure Cosmos DB", tier: "silver" },
+            { image: "/images/redis.png", name: "Redis" },
+            { image: "/images/sql.png", name: "MySQL" },
+            { name: "PostgreSQL" },
+        ]
+    },
+    {
+        type: "Cloud & Infrastructure",
+        items: [
+            { image: "/images/aws.png", name: "AWS", tier: "gold" },
+            { name: "EC2 Spot", tier: "gold" },
+            { name: "SQS", tier: "gold" },
+            { name: "Lambda", tier: "gold" },
+            { image: "/images/google_cloud.png", name: "Google Cloud (GCP)", tier: "gold" },
+            { name: "Azure", tier: "silver" },
+            { name: "Databricks (Model deployment)", tier: "silver" },
+            { name: "Amazon RDS" },
+            { name: "Docker" },
+            { name: "Nginx" },
+            { name: "Kubernetes" },
+            { name: "CI/CD" },
+        ]
+    },
+    {
+        type: "Game Development",
+        items: [
+            { name: "Godot" },
+        ]
+    },
+    {
+        type: "Tools & Workflow",
+        items: [
+            { image: "/images/git.png", name: "Git", tier: "gold" },
+            { name: "Unit testing", tier: "gold" },
+            { name: "Postman", tier: "gold" },
+            { name: "BQL (log queries)", tier: "gold" },
+            { name: "GitHub Copilot instruction files", tier: "gold" },
+            { name: "Google Maps API", tier: "silver" },
+            { name: "HLD / LLD" },
         ]
     }
 ]
