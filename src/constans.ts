@@ -1,38 +1,38 @@
 export const about = "I'm Vinayak Agarwal, a software developer with a knack for crafting innovative solutions. With a strong foundation in MERN stack (MongoDB, Express.js, React.js, Node.js), I thrive on building engaging and scalable applications. My passion lies in user experience, and I've demonstrably boosted engagement by 40% through features like AMAs and notifications.  Beyond the code, I'm a 4-star rated CodeChef and have tackled over 1400 problems on LeetCode, showcasing my problem-solving prowess.";
 export const about2 = "I can help you build a product, feature or website. I can provide full stack design services or just the right amount of them. I can help you with SEO, SMM, and more.";
 
-const exp1about = "During my time at Idreamcareer, I was deeply committed to empowering students through innovative solutions. I played a key role in crafting engaging features like AMAs and notifications, leading to a remarkable 40% increase in user engagement. This wasn't just about keeping students entertained; it translated to them actively participating in the platform, exploring career options, and ultimately making informed decisions. Furthermore, I leveraged my data analysis skills to contribute to a more personalized experience. This involved collaborating on projects like the Manager dashboard, which provided real-time insights into student progress, enabling a more targeted approach to career guidance. My contributions at Idreamcareer exemplify my passion for using technology to bridge the gap between students and their career aspirations.";
-const exp2about = "At RenewBuy, Artivatic.ai, I thrived in a cross-platform development environment, building an insurance lead generation application for web, Android, and iOS. My focus on clean code practices and efficient development methodologies ensured the app's long-term maintainability.  This project honed my ability to adapt to different frameworks and collaborate effectively, as evidenced by optimizing background sync and database operations (reducing wait time by 80%), ultimately streamlining the user experience.";
-// const exp3about = "As a Software Developer Intern at The Indian Mom, I gained valuable experience in user experience design. I implemented a login/signup system to personalize user data, enhancing the user journey. Additionally, I created animations that helped reduce users' perceived waiting time, leading to a more engaging and efficient user experience.";
-const exp4about = "During my internship at Petuk Ji, I honed my Java skills by contributing to their application built with Firebase. My focus was on improving user experience by implementing Firebase Search, a feature that allows users to easily find restaurants that cater to their preferences. This contribution empowered users with a more efficient and personalized way to navigate the platform.";
+const goldmanSachsAbout = "Led frontend development as the team's sole frontend developer and delivered my ETF platform work end to end across the stack. This included ETF building, portfolio manager reminders, and a pro rata calculator, for which I handled the technical spike, Spring Boot backend, and frontend. I also wrote backend jobs and gathered requirements. Created reusable GitHub Copilot instruction files adopted across the team to help developers build UI consistent with shared conventions.";
+const indigoAbout = "Fixed table-rendering issues in the customer-facing 6Eskai UI. Also took over and fixed 6e Engineering GPT, an internal AI search tool for maintenance documents, combining semantic vector search with keyword/full-text search; debugged its Python code, re-ran its models, and deployed fixes. On a separate internal weather-prediction tool, built the UI using the Google Maps API to display weather at each airport while teammates handled the prediction model and backend. Used React, Python/FastAPI, Azure, and Databricks-hosted models.";
+const exp1about = "Built student-facing features including onboarding and a paid learning module, and contributed to a Manager dashboard and BigQuery ETL with the team. The dashboard provided real-time operational metrics for schools and firms through MongoDB and Meteor, while research analytics were batch-processed into BigQuery with about a four-hour delay. Added Flutter push notifications and dynamic links to open chats. Proposed and implemented moving assessment generation from Lambda to an EC2 Spot Instance to reduce cost.";
+const exp2about = "Worked across Android and Flutter insurance applications. Added a calendar feature to Mio, led development of an HSBC Flutter app for agents working in areas with limited connectivity, and built responsive layouts and offline data handling with Cloud Firestore.";
 export const experience = [
     {
-        company: "IdreamCareer",
-        duration: "Jul 2022 - Current",
+        company: "Goldman Sachs",
+        duration: "Jun 2025 - Present",
         color: "var(--secondary-color-1)",
-        designation: "Full Stack Developer",
+        designation: "Associate Full stack Developer",
+        about: goldmanSachsAbout
+    },
+    {
+        company: "IndiGo",
+        duration: "Mar 2025 - Jun 2025",
+        color: "var(--secondary-color-2)",
+        designation: "Engineer - Full Stack",
+        about: indigoAbout
+    },
+    {
+        company: "iDreamCareer (AASMAN FOUNDATION)",
+        duration: "Jul 2022 - Mar 2025",
+        color: "var(--secondary-color-3)",
+        designation: "Software Engineer - Full Stack",
         about: exp1about
     },
     {
         company: "Artivatic.ai",
-        duration: "Feb 2021 - Jul 2022",
-        color: "var(--secondary-color-2)",
-        designation: "Software Developer Intern",
+        duration: "Feb 2021 - Jun 2022",
+        color: "var(--secondary-color-1)",
+        designation: "Software Engineer Intern",
         about: exp2about
-    },
-    // {
-    //     company: "The Indian Mom",
-    //     duration: "Oct 2020 - Dec 2020",
-    //     color: "var(--secondary-color-3)",
-    //     designation: "FrontEnd Developer Intern",
-    //     about: exp3about
-    // },
-    {
-        company: "PetukJi",
-        duration: "Sep 2020 - Oct 2020",
-        color: "var(--secondary-color-3)",
-        designation: "FrontEnd Developer Intern",
-        about: exp4about
     },
 ]
 
