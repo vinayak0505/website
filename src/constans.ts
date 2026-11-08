@@ -286,13 +286,13 @@ export const skills: { type: string; items: Skill[] }[] = [
     {
         type: "Backend & APIs",
         items: [
-            { name: "Spring Boot", tier: "diamond" },
+            { image: "/images/springboot.svg", name: "Spring Boot", tier: "diamond" },
             { image: "/images/nodejs.png", name: "Node.js", tier: "diamond" },
             { image: "/images/express.png", name: "Express", tier: "gold" },
             { name: "WebSockets", tier: "gold" },
-            { name: "FastAPI", tier: "silver" },
-            { name: "GraphQL" },
-            { name: "Kafka" },
+            { image: "/images/fastapi.svg", name: "FastAPI", tier: "silver" },
+            { image: "/images/graphql.svg", name: "GraphQL" },
+            { image: "/images/apachekafka.svg", name: "Kafka" },
         ]
     },
     {
@@ -301,21 +301,21 @@ export const skills: { type: string; items: Skill[] }[] = [
             { image: "/images/java.png", name: "Java", tier: "diamond" },
             { image: "/images/javascript.png", name: "JavaScript", tier: "diamond" },
             { image: "/images/typescript.png", name: "TypeScript", tier: "diamond" },
-            { name: "Dart", tier: "gold" },
+            { image: "/images/dart.svg", name: "Dart", tier: "gold" },
             { image: "/images/cplusplus.png", name: "C++", tier: "gold" },
-            { name: "Python", tier: "silver" },
-            { name: "Kotlin", tier: "silver" },
+            { image: "/images/python.svg", name: "Python", tier: "silver" },
+            { image: "/images/kotlin.svg", name: "Kotlin", tier: "silver" },
             { image: "/images/c.png", name: "C", tier: "silver" },
-            { name: "GDScript" },
+            { image: "/images/godotengine.svg", name: "GDScript" },
         ]
     },
     {
         type: "Frontend & UI",
         items: [
             { image: "/images/react.png", name: "React", tier: "diamond" },
-            { name: "Meteor", tier: "gold" },
-            { name: "Material UI", tier: "gold" },
-            { name: "AG Grid", tier: "gold" },
+            { image: "/images/meteor.svg", name: "Meteor", tier: "gold" },
+            { image: "/images/mui.svg", name: "Material UI", tier: "gold" },
+            { image: "/images/ag-grid-logo.png", name: "AG Grid", tier: "gold" },
             { image: "/images/next.png", name: "Next.js", tier: "gold" },
             { image: "/images/redux.png", name: "Redux", tier: "gold" },
             { image: "/images/html.png", name: "HTML", tier: "gold" },
@@ -328,9 +328,9 @@ export const skills: { type: string; items: Skill[] }[] = [
     {
         type: "Mobile",
         items: [
-            { name: "Android", tier: "gold" },
-            { name: "Flutter", tier: "gold" },
-            { name: "Firebase Cloud Messaging" },
+            { image: "/images/android.svg", name: "Android", tier: "gold" },
+            { image: "/images/flutter.svg", name: "Flutter", tier: "gold" },
+            { image: "/images/firebase.svg", name: "Firebase Cloud Messaging" },
         ]
     },
     {
@@ -339,34 +339,34 @@ export const skills: { type: string; items: Skill[] }[] = [
             { image: "/images/mongo.png", name: "MongoDB", tier: "gold" },
             { image: "/images/firebase.png", name: "Firestore", tier: "gold" },
             { image: "/images/google_cloud.png", name: "BigQuery", tier: "gold" },
-            { name: "S3", tier: "gold" },
-            { name: "Azure Cosmos DB", tier: "silver" },
+            { image: "/images/aws.png", name: "S3", tier: "gold" },
+            { image: "/images/azure.svg", name: "Azure Cosmos DB", tier: "silver" },
             { image: "/images/redis.png", name: "Redis" },
             { image: "/images/sql.png", name: "MySQL" },
-            { name: "PostgreSQL" },
+            { image: "/images/postgresql.svg", name: "PostgreSQL" },
         ]
     },
     {
         type: "Cloud & Infrastructure",
         items: [
             { image: "/images/aws.png", name: "AWS", tier: "gold" },
-            { name: "EC2 Spot", tier: "gold" },
-            { name: "SQS", tier: "gold" },
-            { name: "Lambda", tier: "gold" },
+            { image: "/images/aws.png", name: "EC2 Spot", tier: "gold" },
+            { image: "/images/aws.png", name: "SQS", tier: "gold" },
+            { image: "/images/aws.png", name: "Lambda", tier: "gold" },
             { image: "/images/google_cloud.png", name: "Google Cloud (GCP)", tier: "gold" },
-            { name: "Azure", tier: "silver" },
-            { name: "Databricks (Model deployment)", tier: "silver" },
-            { name: "Amazon RDS" },
-            { name: "Docker" },
-            { name: "Nginx" },
-            { name: "Kubernetes" },
+            { image: "/images/azure.svg", name: "Azure", tier: "silver" },
+            { image: "/images/databricks.svg", name: "Databricks (Model deployment)", tier: "silver" },
+            { image: "/images/aws.png", name: "Amazon RDS" },
+            { image: "/images/docker.svg", name: "Docker" },
+            { image: "/images/nginx.svg", name: "Nginx" },
+            { image: "/images/kubernetes.svg", name: "Kubernetes" },
             { name: "CI/CD" },
         ]
     },
     {
         type: "Game Development",
         items: [
-            { name: "Godot" },
+            { image: "/images/godotengine.svg", name: "Godot" },
         ]
     },
     {
@@ -374,10 +374,10 @@ export const skills: { type: string; items: Skill[] }[] = [
         items: [
             { image: "/images/git.png", name: "Git", tier: "gold" },
             { name: "Unit testing", tier: "gold" },
-            { name: "Postman", tier: "gold" },
+            { image: "/images/postman.svg", name: "Postman", tier: "gold" },
             { name: "BQL (log queries)", tier: "gold" },
-            { name: "GitHub Copilot instruction files", tier: "gold" },
-            { name: "Google Maps API", tier: "silver" },
+            { image: "/images/githubcopilot.svg", name: "GitHub Copilot instruction files", tier: "gold" },
+            { image: "/images/googlemaps.svg", name: "Google Maps API", tier: "silver" },
             { name: "HLD / LLD" },
         ]
     }
