@@ -35,6 +35,12 @@
                 }
             }
 
+            &:nth-of-type(4) {
+                .icon {
+                    background-color: var(--secondary-color-4);
+                }
+            }
+
             .icon {
                 margin-right: 20px;
                 padding: 10px;

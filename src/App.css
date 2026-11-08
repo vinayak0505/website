@@ -24,6 +24,7 @@ a:active {
     --secondary-color-1: rgb(40, 111, 108);
     --secondary-color-2: rgb(242, 112, 78);
     --secondary-color-3: rgb(238, 192, 72);
+    --secondary-color-4: rgb(139, 125, 184);
     font-family: EudoxusSansGX;
     scroll-behavior: smooth;
 }
