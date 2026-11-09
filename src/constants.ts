@@ -39,7 +39,7 @@ export const expertise = {
             url: "https://codechef.com/users/vinayakagg05"
         },
         {
-            value: "1400+",
+            value: "1,500",
             label: "LeetCode solved",
             url: "https://leetcode.com/u/vinayakaggarwal05/"
         }
@@ -72,10 +72,38 @@ export const homeContent = {
     }
 };
 
-const goldmanSachsAbout = "Led frontend development as the team's sole frontend developer and delivered my ETF platform work end to end across the stack. This included ETF building, portfolio manager reminders, and a pro rata calculator, for which I handled the technical spike, Spring Boot backend, and frontend. I also wrote backend jobs and gathered requirements. Created reusable GitHub Copilot instruction files adopted across the team to help developers build UI consistent with shared conventions.";
-const indigoAbout = "Fixed table-rendering issues in the customer-facing 6Eskai UI. Also took over and fixed 6e Engineering GPT, an internal AI search tool for maintenance documents, combining semantic vector search with keyword/full-text search; debugged its Python code, re-ran its models, and deployed fixes. On a separate internal weather-prediction tool, built the UI using the Google Maps API to display weather at each airport while teammates handled the prediction model and backend. Used React, Python/FastAPI, Azure, and Databricks-hosted models.";
-const exp1about = "Built student-facing features including onboarding and a paid learning module, and contributed to a Manager dashboard and BigQuery ETL with the team. The dashboard provided real-time operational metrics for schools and firms through MongoDB and Meteor, while research analytics were batch-processed into BigQuery with about a four-hour delay. Added Flutter push notifications and dynamic links to open chats. Proposed and implemented moving assessment generation from Lambda to an EC2 Spot Instance to reduce cost.";
-const exp2about = "Worked across Android and Flutter insurance applications. Added a calendar feature to Mio, led development of an HSBC Flutter app for agents working in areas with limited connectivity, and built responsive layouts and offline data handling with Cloud Firestore.";
+const goldmanSachsAbout = `Working across a platform with ~15 developers and 7–8 Spring Boot services, I lead the frontend (meteorUI) while also delivering full-stack end-to-end features. By the Phase 1 release (~10 months in), I had authored ~90% of the frontend code by lines, as the only developer driving frontend work on a team with mostly backend backgrounds.
+
+For the ETF platform I owned the full delivery end-to-end: gathered requirements, wrote the technical spike, built the Spring Boot backend service, and built the React UI — covering ETF creation, a pro rata calculator, and email reminder notifications sent to all portfolio managers. I also wrote backend batch jobs and handled precision-critical number handling (BigDecimal on the backend; BigInt in the UI for preview calculations).
+
+I wrote 7–8 GitHub Copilot instruction files covering memoization, service patterns, codebase architecture, and the firm's internal UI toolkit (styling, AG Grid wrapper). All ~15 developers use them. They enabled backend developers with minimal frontend experience to build and ship UI that conforms to our design language. I review every UI change to enforce standards. The files also include a "create MR" flow that generates a change summary, creates test cases, runs lint and best-practice checks, and produces a pre-filled MR URL.
+
+Stack: Spring Boot, Java, React, SingleStore (SQL), Vitest, GitLab CI (firm's managed pipeline, 80% line-coverage requirement), Swagger/OpenAPI, Grafana.`;
+const indigoAbout = `Took over and fixed 6E Engineering GPT, an internal AI search tool over maintenance documents. The previous developer had left before I joined. I fixed ingestion bugs (PDF tags not parsed correctly, DB connection timing, missing retries), refactored the codebase from 4–5 files to 20+ using separation of concerns (the same parsing and insertion logic had been repeated for each manual; I broke it into reusable functions), re-ran parsing and insertion for all manuals, and deployed the fixed version. The tool uses hybrid retrieval — semantic vector search combined with keyword/full-text search — with GPT models for query rewriting and answer generation. Stack: Python/FastAPI backend, React frontend, Azure for DB and hosting.
+
+Also fixed table-rendering issues in 6Eskai, IndiGo's customer-facing AI chatbot (separate from 6E Engineering GPT).
+
+Built the UI for a separate internal visibility-prediction tool using the Google Maps API, showing predicted mist/visibility at each airport; teammates handled the prediction model and backend.`;
+const exp1about = `Built a fully custom animated gamified career-discovery quiz end-to-end: designed and built the React (Next.js) animation — considered impossible by the design team (the CEO explicitly told the designer the engineering team wouldn't be able to build it) — and wrote the Node.js/Express API layer that saved user answers to MongoDB as students progressed, so they could drop out and resume from exactly the same question. On completion, answers were sent to an internal recommendation API and the top-3 career/course cards were shown to the student.
+
+Built other student-facing features: an animated onboarding screen, a paid learning module for 10th-class students, and contributed to AMAs.
+
+Built the Manager dashboard in Meteor, which kept a school principal or firm head's browser in sync with MongoDB in real time — showing test completions, live test-takers, and average scores. Added a Redis cache (4-minute TTL) for the student-common portion of the dashboard.
+
+Contributed to the BigQuery analytics pipeline: events were queued in SQS and batch-loaded into BigQuery every 4 hours via a scheduled Lambda (batch load is free; streaming inserts are charged). My part was mainly the dashboard side that reads from BigQuery, plus small parts of the ingestion side.
+
+Added Flutter push notifications with Firebase Dynamic Links for deep linking into chats. Also built the Flutter client for a WebSocket feature showing real-time messages between students and counsellors (teammates built the server).
+
+Proposed and implemented moving PDF assessment generation from Lambda to an EC2 Spot Instance to reduce cost. When the Spot instance starts it queries MongoDB for incomplete assessments, generates each one, uploads to S3, and marks it complete only after the S3 URL is saved — so no work is lost if it restarts.
+
+Received three Certificates of Recognition from the Founder & CEO (Oct 2022, Q2 2024, early 2025).
+
+Stack: Next.js, React, Redux, Node.js, Express, MongoDB, Redis, Meteor, Flutter/Dart, Firebase Dynamic Links, WebSockets, AWS (EC2 Spot, S3, SQS, Lambda), GCP BigQuery.`;
+const exp2about = `Worked in a team of 5 developers across two insurance applications. Added a Calendar feature to Mio, an Android (Java) one-stop insurance app for the whole family.
+
+Led development of an HSBC Flutter app that let agents add customer details for onboarded customers in remote areas without internet — the first Flutter project I owned end-to-end. The app used a single codebase for web, Android, and iOS (Riverpod, MVC architecture) with background sync and offline data stored in Cloud Firestore (chosen over SQLite for security reasons specified by the client).
+
+Designed responsive layouts that worked across phones, small tablets, and large tablets; the rest of the team later adopted this approach across the codebase.`;
 export const experience = [
     {
         company: "Goldman Sachs",
@@ -92,7 +120,7 @@ export const experience = [
         about: indigoAbout
     },
     {
-        company: "iDreamCareer (AASMAN FOUNDATION)",
+        company: "iDreamCareer (Aasman Foundation)",
         duration: "Jul 2022 - Mar 2025",
         color: "var(--secondary-color-3)",
         designation: "Software Engineer - Full Stack",
@@ -411,7 +439,7 @@ export const skills: { type: string; items: Skill[] }[] = [
             { image: "/images/firebase.png", name: "Firestore", tier: "gold" },
             { image: "/images/google_cloud.png", name: "BigQuery", tier: "gold" },
             { image: "/images/aws.png", name: "S3", tier: "gold" },
-            { image: "/images/azure.svg", name: "Azure Cosmos DB", tier: "silver" },
+            { image: "/images/azure.svg", name: "Azure DB", tier: "silver" },
             { image: "/images/redis.png", name: "Redis" },
             { image: "/images/sql.png", name: "MySQL" },
             { image: "/images/postgresql.svg", name: "PostgreSQL" },
@@ -426,11 +454,8 @@ export const skills: { type: string; items: Skill[] }[] = [
             { image: "/images/aws.png", name: "Lambda", tier: "gold" },
             { image: "/images/google_cloud.png", name: "Google Cloud (GCP)", tier: "gold" },
             { image: "/images/azure.svg", name: "Azure", tier: "silver" },
-            { image: "/images/databricks.svg", name: "Databricks (Model deployment)", tier: "silver" },
-            { image: "/images/aws.png", name: "Amazon RDS" },
             { image: "/images/docker.svg", name: "Docker" },
             { image: "/images/nginx.svg", name: "Nginx" },
-            { image: "/images/kubernetes.svg", name: "Kubernetes" },
             { name: "CI/CD" },
         ]
     },
@@ -446,7 +471,7 @@ export const skills: { type: string; items: Skill[] }[] = [
             { image: "/images/git.png", name: "Git", tier: "gold" },
             { name: "Unit testing", tier: "gold" },
             { image: "/images/postman.svg", name: "Postman", tier: "gold" },
-            { name: "BQL (log queries)", tier: "gold" },
+            { name: "Grafana (log queries)", tier: "gold" },
             { image: "/images/githubcopilot.svg", name: "GitHub Copilot instruction files", tier: "gold" },
             { image: "/images/googlemaps.svg", name: "Google Maps API", tier: "silver" },
             { name: "HLD / LLD" },
