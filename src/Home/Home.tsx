@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef } from 'react';
 import Styles from './Home.module.scss';
+import { homeContent } from '../constants';
 
 const Home = ({ setShowTitle }: { setShowTitle: (value: boolean) => void }) => {
     const titleRef = useRef<HTMLDivElement>(null);
@@ -18,18 +19,18 @@ const Home = ({ setShowTitle }: { setShowTitle: (value: boolean) => void }) => {
     return (
         <div id='about' className={Styles.home}>
             <div className={Styles.top}>
-                <div ref={titleRef} className={Styles.title}>Hi there,<br />I'm <u>Vinayak Agarwal</u></div>
-                <div className={Styles.subtitle}>Associate Full stack Developer<br />Goldman Sachs · Hyderabad (on-site)</div>
+                <div ref={titleRef} className={Styles.title}>{homeContent.greeting}<br />I'm <u>{homeContent.name}</u></div>
+                <div className={Styles.subtitle}>{homeContent.role}<br />{homeContent.employer} · {homeContent.location}</div>
             </div>
-            <a className={Styles.resume} href='https://drive.google.com/drive/folders/1rquZ_MipJIYiSyocuwfGbvmUqo3D9ngP' target='_blank' rel='noreferrer'>Download Resume</a>
+            <a className={Styles.resume} href={homeContent.resume.url} target='_blank' rel='noreferrer'>{homeContent.resume.label}</a>
             <div className={Styles.bottom}>
                 <div className={Styles.collage}>
-                    <div className={Styles.metric}><span className={Styles.value}>9</span><span>Out of 10 CGPA</span></div>
-                    <div className={Styles.detail}>B.Tech in Computer Science and Engineering (July 2019 - July 2023)<br />Guru Tegh Bahadur Institute of Technology (GGSIPU)</div>
+                    <div className={Styles.metric}><span className={Styles.value}>{homeContent.education.metric}</span><span>{homeContent.education.metricLabel}</span></div>
+                    <div className={Styles.detail}>{homeContent.education.degree}<br />{homeContent.education.institution}</div>
                 </div>
                 <div className={Styles.experience}>
-                    <div className={Styles.metric}><span className={Styles.value}>3+</span><span>Years of experience since graduating</span></div>
-                    <div className={Styles.detail}>4+ years counting full-time work from July 2022, during my final year<br />1.5 years of internship experience</div>
+                    <div className={Styles.metric}><span className={Styles.value}>{homeContent.experience.metric}</span><span>{homeContent.experience.metricLabel}</span></div>
+                    <div className={Styles.detail}>{homeContent.experience.details[0]}<br />{homeContent.experience.details[1]}</div>
                 </div>
             </div>
         </div>

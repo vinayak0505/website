@@ -1,4 +1,4 @@
-.experties {
+.expertise {
     display: flex;
     padding: var(--padding);
     gap: 40px;
@@ -111,7 +111,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .experties {
+    .expertise {
         flex-direction: column-reverse;
     }
 

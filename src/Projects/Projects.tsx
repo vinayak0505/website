@@ -1,4 +1,4 @@
-import { Project, projects } from "../constans";
+import { Project, projects } from "../constants";
 import Styles from "./Projects.module.scss";
 
 const Item = ({ item, featured = false }: { item: Project, featured?: boolean }) => {

@@ -1,4 +1,4 @@
-import { Certificate, certificates } from "../constans";
+import { Certificate, certificates } from "../constants";
 import Styles from "./Certificates.module.scss";
 
 const Item = ({ item }: { item: Certificate }) => {

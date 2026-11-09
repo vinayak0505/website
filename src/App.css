@@ -12,6 +12,11 @@ a:active {
     color: inherit;
 }
 
+a:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 4px;
+}
+
 @font-face {
     font-family: EudoxusSansGX;
     src: url("./Eudoxus-Sans-font/EudoxusSansGX.ttf");
@@ -32,6 +37,20 @@ a:active {
 @media screen and (max-width: 768px) {
     :root {
         --padding: 32px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    :root {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
     }
 }
 

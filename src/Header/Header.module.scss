@@ -17,6 +17,10 @@
         transition: opacity ease-in-out 0.5s;
     }
 
+    .menuButton {
+        display: none;
+    }
+
     .nav {
         display: flex;
         gap: 1.5rem;
@@ -39,7 +43,53 @@
 }
 
 @media screen and (max-width: 768px) {
-    .nav{
-        visibility: hidden;
+    .header {
+        align-items: center;
+
+        .menuButton {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            width: 44px;
+            height: 44px;
+            border: 0;
+            background: transparent;
+            color: inherit;
+            cursor: pointer;
+
+            span {
+                display: block;
+                width: 24px;
+                height: 2px;
+                background-color: currentColor;
+            }
+
+            &:focus-visible {
+                outline: 2px solid currentColor;
+                outline-offset: 2px;
+            }
+        }
+
+        .nav {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            flex-direction: column;
+            gap: 0;
+            padding: 8px 32px 16px;
+            background-color: var(--background-color);
+            border-bottom: 1px solid var(--primary-color);
+
+            &.navOpen {
+                display: flex;
+            }
+
+            .item {
+                padding: 12px 0;
+            }
+        }
     }
 }

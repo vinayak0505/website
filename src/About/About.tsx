@@ -1,4 +1,4 @@
-import { email, icons, info } from '../constans';
+import { email, icons, info } from '../constants';
 import Styles from './About.module.scss';
 
 const About = () => {

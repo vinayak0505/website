@@ -1,5 +1,76 @@
-export const about = "I'm Vinayak Agarwal, a software developer with a knack for crafting innovative solutions. With a strong foundation in MERN stack (MongoDB, Express.js, React.js, Node.js), I thrive on building engaging and scalable applications. My passion lies in user experience, and I've demonstrably boosted engagement by 40% through features like AMAs and notifications.  Beyond the code, I'm a 4-star rated CodeChef and have tackled over 1400 problems on LeetCode, showcasing my problem-solving prowess.";
-export const about2 = "I can help you build a product, feature or website. I can provide full stack design services or just the right amount of them. I can help you with SEO, SMM, and more.";
+import frontendIcon from './assets/frontend.svg';
+import backendIcon from './assets/backend.svg';
+import devopsIcon from './assets/devops.svg';
+import aiIcon from './assets/ai.svg';
+
+export const expertise = {
+    title: "Things that I do",
+    descriptions: [
+        "I'm Vinayak Agarwal, a software developer with a knack for crafting innovative solutions. With a strong foundation in MERN stack (MongoDB, Express.js, React.js, Node.js), I thrive on building engaging and scalable applications. My passion lies in user experience, and I've demonstrably boosted engagement by 40% through features like AMAs and notifications.  Beyond the code, I'm a 4-star rated CodeChef and have tackled over 1400 problems on LeetCode, showcasing my problem-solving prowess.",
+        "I can help you build a product, feature or website. I can provide full stack design services or just the right amount of them. I can help you with SEO, SMM, and more.",
+        "Beyond using AI tools, I make them more useful for the whole team by documenting how our codebase is structured and how UI should be built. Shared Copilot instructions let developers apply those conventions while generating UI, and I review the results to keep the code aligned with the project."
+    ],
+    services: [
+        {
+            icon: frontendIcon,
+            title: "Frontend Developer",
+            description: "With 3+ years of experience, I build interactive user interfaces with React, Redux and TypeScript."
+        },
+        {
+            icon: backendIcon,
+            title: "Backend Developer",
+            description: "With 3+ years of experience, I build backend applications and APIs with Node.js, Express, MongoDB, Java and Spring Boot."
+        },
+        {
+            icon: devopsIcon,
+            title: "DevOps Engineer",
+            description: "With 1+ years of experience, I deploy and maintain applications using AWS and GCP."
+        },
+        {
+            icon: aiIcon,
+            title: "AI-assisted Development",
+            description: "Created reusable context files for GitHub Copilot, enabling developers with limited frontend experience to build UI that follows our codebase and design conventions."
+        }
+    ],
+    profiles: [
+        {
+            value: "4★",
+            label: "CodeChef",
+            url: "https://codechef.com/users/vinayakagg05"
+        },
+        {
+            value: "1400+",
+            label: "LeetCode solved",
+            url: "https://leetcode.com/u/vinayakaggarwal05/"
+        }
+    ]
+};
+
+export const homeContent = {
+    greeting: "Hi there,",
+    name: "Vinayak Agarwal",
+    role: "Associate Full stack Developer",
+    employer: "Goldman Sachs",
+    location: "Hyderabad (on-site)",
+    resume: {
+        label: "Download Resume",
+        url: "https://drive.google.com/drive/folders/1rquZ_MipJIYiSyocuwfGbvmUqo3D9ngP"
+    },
+    education: {
+        metric: "9",
+        metricLabel: "Out of 10 CGPA",
+        degree: "B.Tech in Computer Science and Engineering (July 2019 - July 2023)",
+        institution: "Guru Tegh Bahadur Institute of Technology (GGSIPU)"
+    },
+    experience: {
+        metric: "3+",
+        metricLabel: "Years of experience since graduating",
+        details: [
+            "4+ years counting full-time work from July 2022, during my final year",
+            "1.5 years of internship experience"
+        ]
+    }
+};
 
 const goldmanSachsAbout = "Led frontend development as the team's sole frontend developer and delivered my ETF platform work end to end across the stack. This included ETF building, portfolio manager reminders, and a pro rata calculator, for which I handled the technical spike, Spring Boot backend, and frontend. I also wrote backend jobs and gathered requirements. Created reusable GitHub Copilot instruction files adopted across the team to help developers build UI consistent with shared conventions.";
 const indigoAbout = "Fixed table-rendering issues in the customer-facing 6Eskai UI. Also took over and fixed 6e Engineering GPT, an internal AI search tool for maintenance documents, combining semantic vector search with keyword/full-text search; debugged its Python code, re-ran its models, and deployed fixes. On a separate internal weather-prediction tool, built the UI using the Google Maps API to display weather at each airport while teammates handled the prediction model and backend. Used React, Python/FastAPI, Azure, and Databricks-hosted models.";
@@ -111,7 +182,7 @@ export const projects: Project[] = [
         status: "Work in Progress",
         images: [],
         links: [
-            { label: "Frontend code", url: "https://github.com/vinayak0505/lasy-flatmates-frontend" },
+            { label: "Frontend code", url: "https://github.com/vinayak0505/lazy-flatmates-frontend" },
             { label: "Backend code", url: "https://github.com/vinayak0505/LazyFlatmates-Backend" }
         ],
         about: "A platform in development to help people find nearby flats and connect with potential flatmates.",
@@ -133,7 +204,7 @@ export const projects: Project[] = [
     },
     {
         title: "Knight in Floating Forest",
-        images: [{ src: "/images/knigh_in_floting_forest.png", alt: "Knight in Floating Forest 2D game" }],
+        images: [{ src: "/images/knight-in-floating-forest.png", alt: "Knight in Floating Forest 2D game" }],
         links: [{ label: "Play the game", url: "https://vinayak0505.github.io/Knight-In-Floating-Forest/" }],
         about: "A web-playable 2D platform game with keyboard and touch controls, collectible coins, and saved progress.",
         technologies: ["Godot", "GDScript"]
@@ -173,7 +244,7 @@ export const certificates: Certificate[] = [
         date: "Feb–May 2023 · Top Performer",
         category: "Course certificate",
         image: "/images/node.jpg",
-        link: "http://certificate.codingninjas.com/verify/b946d63ff75aa1b8"
+        link: "https://certificate.codingninjas.com/verify/b946d63ff75aa1b8"
     },
     {
         title: "RU101: Introduction to Redis Data Structures",
@@ -189,7 +260,7 @@ export const certificates: Certificate[] = [
         date: "May–Aug 2023 · Top Performer",
         category: "Course certificate",
         image: "/images/react.jpg",
-        link: "http://certificate.codingninjas.com/verify/ad2698902163bc51"
+        link: "https://certificate.codingninjas.com/verify/ad2698902163bc51"
     },
     {
         title: "Advanced Graph Theory",
@@ -257,7 +328,7 @@ export const info = [
 
 export const icons = [
     {
-        icon: "/images/linkdin.svg",
+        icon: "/images/linkedin.svg",
         link: "https://www.linkedin.com/in/vinayakaggarwal05/",
         tooltip: "LinkedIn"
     },
@@ -269,7 +340,7 @@ export const icons = [
     {
         icon: "/images/leetcode.svg",
         link: "https://leetcode.com/u/vinayakaggarwal05/",
-        tooltip: "Leetcode",
+        tooltip: "LeetCode",
     },
     {
         icon: "/images/codechef.svg",

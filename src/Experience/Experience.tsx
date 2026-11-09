@@ -1,5 +1,5 @@
 import { Fragment } from 'react/jsx-runtime';
-import { experience } from '../constans';
+import { experience } from '../constants';
 import Styles from './Experience.module.scss';
 
 const Divider = ({ color }: { color: string }) => {

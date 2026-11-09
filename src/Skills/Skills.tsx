@@ -1,4 +1,4 @@
-import { skills } from '../constans';
+import { skills } from '../constants';
 import Styles from './Skills.module.scss';
 
 const Skills = () => {
