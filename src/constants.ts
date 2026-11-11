@@ -1,13 +1,12 @@
 import frontendIcon from './assets/frontend.svg';
 import backendIcon from './assets/backend.svg';
-import devopsIcon from './assets/devops.svg';
 import aiIcon from './assets/ai.svg';
 
 export const expertise = {
     title: "Things that I do",
     descriptions: [
-        "I'm Vinayak Agarwal, a software developer with a knack for crafting innovative solutions. With a strong foundation in MERN stack (MongoDB, Express.js, React.js, Node.js), I thrive on building engaging and scalable applications. My passion lies in user experience, and I've demonstrably boosted engagement by 40% through features like AMAs and notifications.  Beyond the code, I'm a 4-star rated CodeChef and have tackled over 1400 problems on LeetCode, showcasing my problem-solving prowess.",
-        "I can help you build a product, feature or website. I can provide full stack design services or just the right amount of them. I can help you with SEO, SMM, and more.",
+        "I'm Vinayak Agarwal, a software developer with a knack for crafting innovative solutions. With a strong foundation in MERN stack (MongoDB, Express.js, React.js, Node.js), I thrive on building engaging and scalable applications. My passion lies in user experience, and marketing's three-month comparison on our dashboard showed engagement up 40% in the period AMAs and notifications shipped.  Beyond the code, I'm a 4-star rated CodeChef and have tackled over 1400 problems on LeetCode, showcasing my problem-solving prowess.",
+        "I can help you build a product, feature or website. I can provide full stack design services or just the right amount of them.",
         "Beyond using AI tools, I make them more useful for the whole team by documenting how our codebase is structured and how UI should be built. Shared Copilot instructions let developers apply those conventions while generating UI, and I review the results to keep the code aligned with the project."
     ],
     services: [
@@ -20,11 +19,6 @@ export const expertise = {
             icon: backendIcon,
             title: "Backend Developer",
             description: "With 3+ years of experience, I build backend applications and APIs with Node.js, Express, MongoDB, Java and Spring Boot."
-        },
-        {
-            icon: devopsIcon,
-            title: "DevOps Engineer",
-            description: "With 1+ years of experience, I deploy and maintain applications using AWS and GCP."
         },
         {
             icon: aiIcon,
@@ -72,13 +66,13 @@ export const homeContent = {
     }
 };
 
-const goldmanSachsAbout = `Working across a platform with ~15 developers and 7–8 Spring Boot services, I lead the frontend (meteorUI) while also delivering full-stack end-to-end features. By the Phase 1 release (~10 months in), I had authored ~90% of the frontend code by lines, as the only developer driving frontend work on a team with mostly backend backgrounds.
+const goldmanSachsAbout = `Working across a platform with ~15 developers and 7–8 services, I lead the frontend (meteorUI) — informally the team's UI lead — while also delivering full-stack end-to-end features. By the Phase 1 release (~10 months in), I had authored ~90% of the frontend code by lines, as the only developer driving frontend work on a team with mostly backend backgrounds.
 
-For the ETF platform I owned the full delivery end-to-end: gathered requirements, wrote the technical spike, built the Spring Boot backend service, and built the React UI — covering ETF creation, a pro rata calculator, and email reminder notifications sent to all portfolio managers. I also wrote backend batch jobs and handled precision-critical number handling (BigDecimal on the backend; BigInt in the UI for preview calculations).
+For the ETF platform I owned the full delivery end-to-end: gathered requirements, wrote the technical spike, built the Spring Boot backend features, and built the React UI — covering ETF creation, a pro rata calculator, and email reminder notifications sent to all portfolio managers. I also wrote backend batch jobs and handled precision-critical number handling (BigDecimal on the backend; BigInt in the UI for preview calculations).
 
 I wrote 7–8 GitHub Copilot instruction files covering memoization, service patterns, codebase architecture, and the firm's internal UI toolkit (styling, AG Grid wrapper). All ~15 developers use them. They enabled backend developers with minimal frontend experience to build and ship UI that conforms to our design language. I review every UI change to enforce standards. The files also include a "create MR" flow that generates a change summary, creates test cases, runs lint and best-practice checks, and produces a pre-filled MR URL.
 
-Stack: Spring Boot, Java, React, SingleStore (SQL), Vitest, GitLab CI (firm's managed pipeline, 80% line-coverage requirement), Swagger/OpenAPI, Grafana.`;
+Stack: Spring Boot, Java, React, Vite, SingleStore (SQL), Vitest, GitLab CI (firm's managed pipeline, 80% line-coverage requirement), Swagger/OpenAPI, Grafana.`;
 const indigoAbout = `Took over and fixed 6E Engineering GPT, an internal AI search tool over maintenance documents. The previous developer had left before I joined. I fixed ingestion bugs (PDF tags not parsed correctly, DB connection timing, missing retries), refactored the codebase from 4–5 files to 20+ using separation of concerns (the same parsing and insertion logic had been repeated for each manual; I broke it into reusable functions), re-ran parsing and insertion for all manuals, and deployed the fixed version. The tool uses hybrid retrieval — semantic vector search combined with keyword/full-text search — with GPT models for query rewriting and answer generation. Stack: Python/FastAPI backend, React frontend, Azure for DB and hosting.
 
 Also fixed table-rendering issues in 6Eskai, IndiGo's customer-facing AI chatbot (separate from 6E Engineering GPT).
@@ -86,22 +80,22 @@ Also fixed table-rendering issues in 6Eskai, IndiGo's customer-facing AI chatbot
 Built the UI for a separate internal visibility-prediction tool using the Google Maps API, showing predicted mist/visibility at each airport; teammates handled the prediction model and backend.`;
 const exp1about = `Built a fully custom animated gamified career-discovery quiz end-to-end: designed and built the React (Next.js) animation — considered impossible by the design team (the CEO explicitly told the designer the engineering team wouldn't be able to build it) — and wrote the Node.js/Express API layer that saved user answers to MongoDB as students progressed, so they could drop out and resume from exactly the same question. On completion, answers were sent to an internal recommendation API and the top-3 career/course cards were shown to the student.
 
-Built other student-facing features: an animated onboarding screen, a paid learning module for 10th-class students, and contributed to AMAs.
+Built other student-facing features: an animated onboarding screen, a paid learning module for 10th-class students, and worked on AMAs (Ask Me Anything), live student–counsellor messaging over WebSocket, in the Next.js web app.
 
-Built the Manager dashboard in Meteor, which kept a school principal or firm head's browser in sync with MongoDB in real time — showing test completions, live test-takers, and average scores. Added a Redis cache (4-minute TTL) for the student-common portion of the dashboard.
+Did most of the development on the Manager dashboard, an existing Meteor.js app, which kept a school principal or firm head's browser in sync with MongoDB in real time — showing test completions, live test-takers, and average scores. Added a Redis cache (4-minute TTL) for the student-common portion of the dashboard.
 
 Contributed to the BigQuery analytics pipeline: events were queued in SQS and batch-loaded into BigQuery every 4 hours via a scheduled Lambda (batch load is free; streaming inserts are charged). My part was mainly the dashboard side that reads from BigQuery, plus small parts of the ingestion side.
 
-Added Flutter push notifications with Firebase Dynamic Links for deep linking into chats. Also built the Flutter client for a WebSocket feature showing real-time messages between students and counsellors (teammates built the server).
+Added Flutter push notifications with Firebase Dynamic Links for deep linking into chats. Also built the Flutter client (Android and iOS) for the AMA live-messaging feature over WebSocket (teammates built the server).
 
-Proposed and implemented moving PDF assessment generation from Lambda to an EC2 Spot Instance to reduce cost. When the Spot instance starts it queries MongoDB for incomplete assessments, generates each one, uploads to S3, and marks it complete only after the S3 URL is saved — so no work is lost if it restarts.
+Proposed and implemented moving PDF assessment generation from Lambda to an EC2 Spot Instance to reduce cost. When the Spot instance starts it queries MongoDB for incomplete assessments, generates each one, uploads to S3, and marks it complete only after the S3 URL is saved — so a restart only repeats the student in progress.
 
 Received three Certificates of Recognition from the Founder & CEO (Oct 2022, Q2 2024, early 2025).
 
-Stack: Next.js, React, Redux, Node.js, Express, MongoDB, Redis, Meteor, Flutter/Dart, Firebase Dynamic Links, WebSockets, AWS (EC2 Spot, S3, SQS, Lambda), GCP BigQuery.`;
+Stack: Next.js, React, Redux, Node.js, Express, MongoDB, Redis, Meteor.js, Flutter/Dart, Firebase Dynamic Links, WebSockets, AWS (EC2 Spot, S3, SQS, Lambda), GCP BigQuery.`;
 const exp2about = `Worked in a team of 5 developers across two insurance applications. Added a Calendar feature to Mio, an Android (Java) one-stop insurance app for the whole family.
 
-Led development of an HSBC Flutter app that let agents add customer details for onboarded customers in remote areas without internet — the first Flutter project I owned end-to-end. The app used a single codebase for web, Android, and iOS (Riverpod, MVC architecture) with background sync and offline data stored in Cloud Firestore (chosen over SQLite for security reasons specified by the client).
+Led development of an HSBC Flutter app that let agents add customer details for onboarded customers in remote areas without internet — the first Flutter project I owned end-to-end. The app used a single codebase for web, Android, and iOS (Riverpod, MVC architecture) with offline data stored in Cloud Firestore (chosen over SQLite for security reasons specified by the client) and a background sync job written as native code: Kotlin for Android by me, iOS by the team lead, and not available on web.
 
 Designed responsive layouts that worked across phones, small tablets, and large tablets; the rest of the team later adopted this approach across the codebase.`;
 export const experience = [
@@ -158,7 +152,7 @@ export const projects: Project[] = [
             { label: "Frontend code", url: "https://github.com/vinayak0505/lazy-engineer-react" },
             { label: "Backend code", url: "https://github.com/vinayak0505/LazyEngineerBackend" }
         ],
-        about: "A student-focused resource-sharing platform for notes, question papers, practical files, books, and jobs. Students can contribute materials, manage profiles, and download resources, with an Android app supporting offline access.",
+        about: "A student-focused resource-sharing platform for notes, question papers, practical files, books, and jobs. Students can contribute materials, manage profiles, and download resources, with Android and web clients.",
         technologies: ["React", "Android", "Node.js", "Express", "MongoDB", "Spring Boot"],
         highlights: [
             "Built web and Android experiences for student-contributed resources.",
@@ -412,7 +406,8 @@ export const skills: { type: string; items: Skill[] }[] = [
         type: "Frontend & UI",
         items: [
             { image: "/images/react.png", name: "React", tier: "diamond" },
-            { image: "/images/meteor.svg", name: "Meteor", tier: "gold" },
+            { image: "/images/meteor.svg", name: "Meteor.js", tier: "gold" },
+            { name: "Vite", tier: "gold" },
             { image: "/images/mui.svg", name: "Material UI", tier: "gold" },
             { image: "/images/ag-grid-logo.png", name: "AG Grid", tier: "gold" },
             { image: "/images/next.png", name: "Next.js", tier: "gold" },
@@ -471,7 +466,7 @@ export const skills: { type: string; items: Skill[] }[] = [
             { image: "/images/git.png", name: "Git", tier: "gold" },
             { name: "Unit testing", tier: "gold" },
             { image: "/images/postman.svg", name: "Postman", tier: "gold" },
-            { name: "Grafana (log queries)", tier: "gold" },
+            { name: "Grafana (BigQuery logging)", tier: "gold" },
             { image: "/images/githubcopilot.svg", name: "GitHub Copilot instruction files", tier: "gold" },
             { image: "/images/googlemaps.svg", name: "Google Maps API", tier: "silver" },
             { name: "HLD / LLD" },
